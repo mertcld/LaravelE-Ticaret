@@ -31,23 +31,28 @@ Route::get('/yesillikler', function () {
     return view('kategoriler.yesillikler');
 });
 
+
+
+// Giriş ve Kayıt olma GET POST 
 Route::get('/girisyap', function () {
-    return view('hesap.girisyap');
+    return view('hesap.kullanici.girisyap');
 });
 Route::get('/kayitol', function () {
-    return view('hesap.kayitol');
+    return view('hesap.kullanici.kayitol');
 });
 Route::post('hesap/girisyap',[HesapIslemleri::class,'loginpost'])->name('loginpost');
 
-
-
 Route::post('hesap/kayitol',[HesapIslemleri::class,'registerpost'])->name('registerpost');
+// Giriş ve Kayıt olma GET POST 
+
+
+
 
 Route::get('/sifresifirla', function () {
-    return view('hesap.sifresifirla');
+    return view('hesap.kullanici.sifresifirla');
 });
 Route::get('/hesabim', function () {
-    return view('hesap.hesabim');
+    return view('hesap.kullanici.hesabim');
 });
 
 

@@ -23,7 +23,11 @@ return new class extends Migration
             $table->boolean('haveStock'); // 1 ise var 0 ise yok
             $table->boolean('isSale'); // 1 ise satışta 0 ise değil
             $table->boolean('isDeleted')->nullable(); // 1 ise silindi 0 yada null ise silinmedi
+            $table->unsignedBigInteger('categoryId');
             $table->timestamps();
+
+
+            $table->foreign('categoryId')->references('id')->on('categories');
         });
     }
 
@@ -34,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product');
+        Schema::dropIfExists('products');
     }
 };
