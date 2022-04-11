@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('orderstatus', function (Blueprint $table) {
             $table->id();
-            $table->integer('value')->unique();
+            $table->string('value');
+            $table->timestamps();
           
         }); 
         $statuss=['Yeni Sipariş','Onaylandı','Sipariş Hazırlanıyor',"Sipariş Kargoda","Sipariş Teslim Edildi"];

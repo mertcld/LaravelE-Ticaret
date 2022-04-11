@@ -15,19 +15,17 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('productId');
+            $table->unsignedBigInteger('product_Id');
             $table->integer('totalAmount');
             $table->integer('quantity');
-            $table->unsignedBigInteger('userId');
-            $table->unsignedBigInteger('orderStatusId');
+            $table->unsignedBigInteger('user_Id');
+            $table->unsignedBigInteger('orderStatus_Id');
             $table->timestamps();
 
-
-
               //Foreign Key
-              $table->foreign('productId')->references('id')->on('products');
-              $table->foreign('userId')->references('id')->on('kullanicilar');
-              $table->foreign('orderStatusId')->references('id')->on('orderstatus');
+              $table->foreign('product_Id')->references('id')->on('products');
+              $table->foreign('user_Id')->references('id')->on('kullanicilar');
+              $table->foreign('orderStatus_Id')->references('id')->on('orderstatus');
         });
     }
 
@@ -38,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('order');
+        Schema::dropIfExists('orders');
     }
 };
