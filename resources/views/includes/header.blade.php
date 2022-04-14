@@ -46,7 +46,7 @@
                     </a>
                     <a href="{{url('/girisyap')}}" class="header-widget" title="My Account">
                         <img src="/images/user.png" alt="user">
-                        <span>Giriş Yap</span>
+                        <span>{{ app('request')->input('user_name') }}</span>
                     </a>
 
                     <form class="header-form">
@@ -218,15 +218,7 @@
                                         <li><a href="error.html">404 Error</a></li>
                                     </ul>
                                 </li>
-                                <li class="navbar-item dropdown">
-                                    <a class="navbar-link dropdown-arrow" href="#">Giriş Çıkış </a>
-                                    <ul class="dropdown-position-list">
-                                        <li><a href="login.html">login</a></li>
-                                        <li><a href="register.html">register</a></li>
-                                        <li><a href="reset-password.html">reset password</a></li>
-                                        <li><a href="change-password.html">change password</a></li>
-                                    </ul>
-                                </li>
+                          
                                 <li class="navbar-item dropdown">
                                     <a class="navbar-link dropdown-arrow" href="#">Blog</a>
                                     <ul class="dropdown-position-list">
@@ -670,7 +662,7 @@
             </a>
             <button class="cate-btn" title="Category List">
                 <i class="fas fa-list"></i>
-                <span>Kategori</span>
+                <span>Kategoriler</span>
             </button>
             <button class="cart-btn" title="Cartlist">
                 <i class="fas fa-shopping-basket"></i>
