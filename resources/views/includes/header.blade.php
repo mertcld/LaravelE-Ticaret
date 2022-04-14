@@ -44,10 +44,21 @@
                     <a href="{{url('/')}}" class="header-logo">
                         <img src="/images/logo.png" alt="logo">
                     </a>
+                    @if (Session::Get('user') ==null )
+                    
                     <a href="{{url('/girisyap')}}" class="header-widget" title="My Account">
                         <img src="/images/user.png" alt="user">
                         <span>Giriş Yap</span>
                     </a>
+                    @else
+                    <a href="{{route('hesabim')}}" class="header-widget" title="My Account">
+                        <img src="/images/user.png" alt="user">
+                        <span>{{Session::Get('userName','Hesabım')}}</span>
+                       
+                    </a>
+                      <a href="{{route('logout')}}"  title="Çıkış Yap" class="header-widget" title="My Account">
+                    <span><i class="icofont-logout"></i></span></a>
+                    @endif
 
                     <form class="header-form">
                         <input type="text" placeholder="Arama yap...">

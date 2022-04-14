@@ -40,7 +40,7 @@
                         <div class="user-form-card">
                             <div class="user-form-title">
                                 <h2> Şifre Sıfırlama</h2>
-                                <p>Şifre sıfırlama çok basit!</p>
+                                <p>Admin şifre sıfırlama çok basit!</p>
                             </div>
                             <form class="user-form">
                                 <div class="form-group">
@@ -52,7 +52,7 @@
                             </form>
                         </div>
                         <div class="user-form-remind">
-                            <p>Geri Dön <a href="{{url('/girisyap')}}">Giriş Yap</a></p>
+                            <p>Geri Dön <a href="{{url('/admin/girisyap')}}">Giriş Yap</a></p>
                         </div>
                         <div class="user-form-footer">
                             <p>KOU | &COPY; Copyright by <a href="#">KOU</a></p>

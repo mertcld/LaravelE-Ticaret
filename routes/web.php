@@ -8,11 +8,15 @@ use App\Http\Controllers\Iletisim;
 use App\Http\Controllers\ResimYukle;
 use App\Http\Controllers\HesapIslemleri;
 use App\Http\Controllers\AdminHesapIslemleri;
+use App\Http\Controllers\LogOutController;
+use App\Http\Controllers\SayfaController;
 
 Route::redirect('/', '/index');
 Route::get('/index', function () {
     return view('pages.index');
 })->name('index');
+
+//Route::get('/index',[SayfaController::class,'userindex'])->name('index');
 Route::get('/magaza', function () {
     return view('pages.magaza');
 })->name('magaza');
@@ -43,10 +47,13 @@ Route::get('/kayitol', function () {
     return view('hesap.kullanici.kayitol');
 });
 Route::post('hesap/girisyap',[HesapIslemleri::class,'loginpost'])->name('loginpost');
-
+Route::get('/sifresifirla', function () {
+    return view('hesap.kullanici.sifresifirla');
+})->name('sifreSifirla');
 Route::post('hesap/kayitol',[HesapIslemleri::class,'registerpost'])->name('registerpost');
 // Giriş ve Kayıt olma GET POST 
-
+//Çıkış yapma
+Route::get('logout', [LogoutController::class, 'index'])->name('logout');
 
 
 Route::get('/admin/girisyap', function () {
@@ -56,19 +63,18 @@ Route::get('/admin/girisyap', function () {
 Route::post('hesap/admin/girisyap',[AdminHesapIslemleri::class,'loginpost'])->name('adminloginpost');
 
 
-Route::get('/sifresifirla', function () {
-    return view('hesap.kullanici.sifresifirla');
-});
 Route::get('/hesabim', function () {
     return view('hesap.kullanici.hesabim');
-});
+})->name('hesabim');
 
 //admin sayfaları
-Route::redirect('/', '/adminindex');
+
 Route::get('/adminindex', function () {
     return view('pages.adminindex');
 })->name('adminindex');
-
+Route::get('/admin/sifresifirla', function () {
+    return view('hesap.admin.sifresifirla');
+})->name('adminSifreSifirla');
 
 
 
