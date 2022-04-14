@@ -14,7 +14,8 @@ return new class extends Migration
             $table->text('name');
             $table->text('email');
             $table->text('password');
-            $table->text('password2')->nullable();
+            $table->boolean('is_admin')->default(false);
+            $table->boolean('is_active')->default(false);
 
             $table->timestamps();
         });

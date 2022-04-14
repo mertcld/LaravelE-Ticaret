@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Admin\AuthController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\VeritabaniIslemleri;
@@ -7,6 +7,8 @@ use App\Http\Controllers\ModelIslemleri;
 use App\Http\Controllers\Iletisim;
 use App\Http\Controllers\ResimYukle;
 use App\Http\Controllers\HesapIslemleri;
+use App\Http\Controllers\AdminHesapIslemleri;
+
 Route::redirect('/', '/index');
 Route::get('/index', function () {
     return view('pages.index');
@@ -47,6 +49,12 @@ Route::post('hesap/kayitol',[HesapIslemleri::class,'registerpost'])->name('regis
 
 
 
+Route::get('/admin/girisyap', function () {
+    return view('hesap.admin.girisyap');
+});
+
+Route::post('hesap/admin/girisyap',[AdminHesapIslemleri::class,'loginpost'])->name('adminloginpost');
+
 
 Route::get('/sifresifirla', function () {
     return view('hesap.kullanici.sifresifirla');
@@ -55,6 +63,11 @@ Route::get('/hesabim', function () {
     return view('hesap.kullanici.hesabim');
 });
 
+//admin sayfaları
+Route::redirect('/', '/adminindex');
+Route::get('/adminindex', function () {
+    return view('pages.adminindex');
+})->name('adminindex');
 
 
 

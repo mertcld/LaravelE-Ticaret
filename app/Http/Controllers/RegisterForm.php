@@ -15,4 +15,10 @@ class RegisterForm extends Controller
         
         return $request->email;
     }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 45c15360ecbd2e2d0ecb704d3e254c5574c02958
 }

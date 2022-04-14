@@ -27,7 +27,7 @@
         <!--=====================================
                     HEADER TOP PART END 
         =======================================-->
-
+        
 
         <!--=====================================
                     HEADER PART START
@@ -46,7 +46,7 @@
                     </a>
                     <a href="{{url('/girisyap')}}" class="header-widget" title="My Account">
                         <img src="/images/user.png" alt="user">
-                        <span>{{ app('request')->input('user_name') }}</span>
+                        <span>Giriş Yap</span>
                     </a>
 
                     <form class="header-form">
@@ -218,7 +218,15 @@
                                         <li><a href="error.html">404 Error</a></li>
                                     </ul>
                                 </li>
-                          
+                                <li class="navbar-item dropdown">
+                                    <a class="navbar-link dropdown-arrow" href="#">Giriş Çıkış </a>
+                                    <ul class="dropdown-position-list">
+                                        <li><a href="login.html">login</a></li>
+                                        <li><a href="register.html">register</a></li>
+                                        <li><a href="reset-password.html">reset password</a></li>
+                                        <li><a href="change-password.html">change password</a></li>
+                                    </ul>
+                                </li>
                                 <li class="navbar-item dropdown">
                                     <a class="navbar-link dropdown-arrow" href="#">Blog</a>
                                     <ul class="dropdown-position-list">
@@ -252,6 +260,40 @@
         <!--=====================================
                     NAVBAR PART END
         =======================================-->
+        <!-- <div class = "container">
+            <div class = "row">
+                 <div class = "card">
+                    <h1 id = "dollar" >##</h1>
+                    <span>dollar</span>
+                </div>
+
+                <div class = "card">
+                    <h1 id = "euro" >##</h1>
+                    <span>euro</span>
+                </div>
+
+                <div class = "card">
+                    <h1 id = "sterlin" >##</h1>
+                    <span>sterlin</span>
+                </div>
+
+            </div>
+        </div> -->
+
+        <?php
+
+        $kurlar = simplexml_load_file("https://www.tcmb.gov.tr/kurlar/today.xml");
+
+        $dolar = $kurlar -> Currency[0] -> BanknoteBuying;
+        $euro = $kurlar -> Currency[3] -> BanknoteSelling;
+
+        $dolar = str_replace(".",",",$dolar);
+        $euro = str_replace(".",",",$euro);
+
+        echo "Dolar:" .$dolar;
+        echo "<br>";
+        echo "Euro:" .$euro;
+        ?>
 
 
         <!--=====================================
@@ -406,7 +448,6 @@
         <!--=====================================
                 CATEGORY SIDEBAR PART END
         =======================================-->
-
 
         <!--=====================================
                   CART SIDEBAR PART START
