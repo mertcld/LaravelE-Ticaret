@@ -48,7 +48,11 @@
                                     <div class="my-3">
                                     @if(session()->has('message'))
                                 
-    
+                                <div class="alert alert-danger text-center">
+                                {{ session()->get('message') }}
+                                </div>
+                                @endif
+                        </div>
                                     <div class="form-group">
                                         <input type="email" name="email" class="form-control" placeholder="megi@girisyap.com">
                                     </div>

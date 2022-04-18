@@ -31,6 +31,12 @@ class HesabimController extends Controller
         $user = Session()->get('user');
 
 
+    
+            DB::table('kullanicilar')->where('id', $user->id)->update([
+                "name" => $request->name,
+                "email" => $request->email,
+
+            ]);
 
         $user = DB::table('kullanicilar')->where('id', $user->id)->first();
         Session()->put('user', $user);
