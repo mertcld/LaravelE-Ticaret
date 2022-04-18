@@ -20,6 +20,7 @@
 @stop
 
 
+
 @section('content')
 <section class="inner-section profile-part">
             <div class="container">
