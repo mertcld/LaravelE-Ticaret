@@ -12,7 +12,7 @@
 
         <!-- TEMPLATE META -->
         <meta name="template" content="Organe"> 
-        <meta name="title" content="Admin Şifre Sıfırlama">
+        <meta name="title" content="Kullanıcı Şifre Sıfırlama">
       
         <title>Admin Şifre Sıfırlama</title>
 
@@ -42,9 +42,17 @@
                                 <h2> Şifre Sıfırlama</h2>
                                 <p>Şifre sıfırlama çok basit!</p>
                             </div>
+                              <form action="{{url('/sifresifirla-post')}}" method="post">
+                            @csrf
+                            
+                               @if(session('error'))
+                                <div>
+                                {{ session('error')}}
+                                </div>
+                                @endif
                             <form class="user-form">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email adresinizi giriniz..">
+                                    <input type="email" class="form-control" placeholder="Email adresinizi giriniz.." name = "email">
                                 </div>
                                 <div class="form-button">
                                     <button type="submit">Sıfırla</button>

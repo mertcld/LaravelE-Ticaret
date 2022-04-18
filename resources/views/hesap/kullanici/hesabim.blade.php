@@ -28,9 +28,10 @@
                     <div class="col-lg-12">
                         <div class="account-card">
                             <div class="account-title">
-                                <h4>Your Profile</h4>
-                                <button data-bs-toggle="modal" data-bs-target="#profile-edit">edit profile</button>
+                           <h4>Hesap</h4>     
                             </div>
+                              <form method="POST" action="{{ route('kullanici.profilUpdate') }}" enctype="multipart/form-data">
+                            @csrf
                             <div class="account-content">
                                 <div class="row">
                                     <div class="col-lg-2">
@@ -40,19 +41,20 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4">
                                         <div class="form-group">
-                                            <label class="form-label">name</label>
-                                            <input class="form-control" type="text" value="Miron Mahmud">
+                                            <  <label class="form-label">Ad Soyad</label>
+                                            <!-- Miron Mahmud vardı value kısmında -->
+                                            <input class="form-control" type="text" value={{ $Adsoyad }} name="name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-4">
                                         <div class="form-group">
                                             <label class="form-label">Email</label>
-                                            <input class="form-control" type="email" value="mironcoder@gmail.com">
+                                            <input class="form-control" type="email" value={{ $Email }} name="email">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="profile-btn">
-                                            <a href="change-password.html">change pass.</a>
+                                            <button class = "btn btn-success" type ="submit">Güncelle</button>
                                         </div>
                                     </div>
                                 </div>

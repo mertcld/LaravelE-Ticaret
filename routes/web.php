@@ -1,6 +1,10 @@
+
+
 <?php
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\HesabimController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PasswordResetController;
 
 use App\Http\Controllers\VeritabaniIslemleri;
 use App\Http\Controllers\ModelIslemleri;
@@ -10,6 +14,7 @@ use App\Http\Controllers\HesapIslemleri;
 use App\Http\Controllers\AdminHesapIslemleri;
 use App\Http\Controllers\LogOutController;
 use App\Http\Controllers\SayfaController;
+use App\Models\KullanicilarModel;
 
 Route::redirect('/', '/index');
 Route::get('/index', function () {
@@ -63,9 +68,11 @@ Route::get('/admin/girisyap', function () {
 Route::post('hesap/admin/girisyap',[AdminHesapIslemleri::class,'loginpost'])->name('adminloginpost');
 
 
-Route::get('/hesabim', function () {
-    return view('hesap.kullanici.hesabim');
-})->name('hesabim');
+Route::get('/hesabim', [HesabimController::class,'get'])->name('hesabim');
+
+// profile update
+
+Route::post('hesabim',[HesabimController::class,'update'])->name('kullanici.profilUpdate');
 
 //admin sayfaları
 
@@ -76,6 +83,12 @@ Route::get('/admin/sifresifirla', function () {
     return view('hesap.admin.sifresifirla');
 })->name('adminSifreSifirla');
 
+
+
+Route::get('/sifresifirla', function () {
+    return view('hesap.kullanici.sifresifirla');
+});
+Route::post('/sifresifirla-post', [PasswordResetController::class, 'kullanici_new_password']);
 
 
 //veritabani işlemleri için crud
