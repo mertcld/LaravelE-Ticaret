@@ -85,11 +85,17 @@ Route::get('/admin/sifresifirla', function () {
 
 
 
+// kullanici sifre sifirlama 
 Route::get('/sifresifirla', function () {
     return view('hesap.kullanici.sifresifirla');
 });
 Route::post('/sifresifirla-post', [PasswordResetController::class, 'kullanici_new_password']);
 
+// admin sifre sifirlama
+Route::get('/sifresifirla', function () {
+    return view('hesap.admin.sifresifirla');
+});
+Route::post('/sifresifirla-post', [PasswordResetController::class, 'admin_new_password']);
 
 //veritabani işlemleri için crud
 // Route::get('/kayitol',[VeritabaniIslemleri::class,'kayitol']);

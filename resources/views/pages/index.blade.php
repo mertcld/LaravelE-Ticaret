@@ -19,8 +19,13 @@
 <link rel="stylesheet" href="/css/custom/index.css">
 @stop
 
+<div>
 
 @section('content')
+
+
+
+
 <div class="modal fade" id="product-view">
             <div class="modal-dialog"> 
                 <div class="modal-content">
@@ -33,6 +38,7 @@
                                         <label class="view-label new">new</label>
                                         <label class="view-label off">-10%</label>
                                     </div>
+
                                     <ul class="preview-slider slider-arrow"> 
                                         <li><img src="/images/product/01.jpg" alt="product"></li>
                                         <li><img src="/images/product/02.jpg" alt="product"></li>
@@ -53,6 +59,8 @@
                                     </ul>
                                 </div>
                             </div>
+                            
+
                             <div class="col-md-6 col-lg-6">
                                 <div class="view-details">
                                     <h3 class="view-name">
@@ -183,6 +191,7 @@
         <!--=====================================
                     BANNER PART END
         =======================================-->
+  <div id="kurlar"></div><script async src="https://dovizmix.com/dovizmix/js/dovizwidget.min.js" type="text/javascript" charset="utf-8" ></script>
 
 
         <!--=====================================

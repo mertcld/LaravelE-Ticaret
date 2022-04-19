@@ -37,8 +37,6 @@ class AdminHesapIslemleri extends Controller
  
     }
     
-    
-  
     public function check(){
         $request=$this->request;
         $user=$this->user;
@@ -63,4 +61,7 @@ class AdminHesapIslemleri extends Controller
 
         
     }
+
+   
+        
 }
