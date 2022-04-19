@@ -2,6 +2,7 @@
 
 <?php
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\HesabimController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PasswordResetController;
@@ -118,3 +119,27 @@ Route::get('/modellistele',[ModelIslemleri::class,'listele']);
 Route::get('/modelekle',[ModelIslemleri::class,'ekle']);
 Route::get('/iletisim',[Iletisim::class,'index']);
 Route::post('/iletisim-form',[Iletisim::class,'ekle'])->name('iletisimform'); 
+
+
+// admin paneli kullanici sayfasi
+
+Route::get('/kullanicigoruntule', function () {
+    return view('hesap.admin.kullanici.kullanicigoruntule');
+});
+
+
+// admin paneli siparis sayfasi
+
+Route::get('/siparisgoruntule', function () {
+    return view('hesap.admin.siparis.siparisgoruntule');
+});
+
+
+// admin paneli urun sayfasi
+
+Route::get('/urungoruntule', function () {
+    return view('hesap.admin.urun.urungoruntule');
+});
+
+
+Route::get('users', [UserController::class,'index']);
