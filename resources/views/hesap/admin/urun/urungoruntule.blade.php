@@ -26,7 +26,6 @@
         <th>Fiyat</th>
         <th>Adet</th>
         <th>Açıklama</th>
-        <th>Name</th>
         <th>Resim</th>
         <th>Stokta mı</th>
         <th>Satışta mı</th>
@@ -38,14 +37,28 @@
     <tr>
         <td>{{$product['id']}}</td>
         <td>{{$product['name']}}</td>
-        <td>{{$product['fiyat']}}</td>
-        <td>{{$product['adet']}}</td>
-        <td>{{$product['aciklama']}}</td>
-        <td>{{$product['resim']}}</td>
-        <td>{{$product['have_stock']}}</td>
-        <td>{{$product['isSale']}}</td>
+        <td>{{$product['price']}}</td>
+        <td>{{$product['quantity']}}</td>
+        <td>{{$product['description']}}</td>
+        <td>{{$product['picture']}}</td>
+         <td>
+            <input data-id = "{{$product -> id}}" class = "toggle-class" type = "checkbox"
+            data-onstyle = "success" 
+                data-offstyle = "danger" data-toggle ="toggle" data-on = "Stokta" data-off = "Stokta Değil"
+                {{$product -> haveStock ? 'checked' : ''}}>
+            
+
+        </td>
+       <td>
+            <input data-id = "{{$product -> id}}" class = "toggle-class" type = "checkbox"
+            data-onstyle = "success" 
+                data-offstyle = "danger" data-toggle ="toggle" data-on = "Satışta" data-off = "Satışta Değil"
+                {{$product -> isSale ? 'checked' : ''}}>
+            
+
+        </td>
         
-    </tr>
+    </tr> 
     @endforeach
     </tbody>
   </table>
@@ -54,5 +67,49 @@
 </body>
     </div> 
 
+    <script>
+    $ (document).ready(function(){
+        $("#product").DataTable()
+        });
+    $ (function (){
+        $('.toggle-class').change(function() {
+            var status = $(this).prop('checked') == true ? 1 : 0;
+            var product_id = $(this).data('id');
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: '/changestatus',
+                data: {'isSale':status, 'id': product_id},
+                success: function(data){
+                    console.log('Success')
+                }
+            })
+        });
+    });
+
+</script>
+
+<script>
+    $ (document).ready(function(){
+        $("#product").DataTable()
+        });
+    $ (function (){
+        $('.toggle-class').change(function() {
+            var status = $(this).prop('checked') == true ? 1 : 0;
+            var product_id = $(this).data('id');
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: '/changestatus',
+                data: {'haveStock':status, 'id': product_id},
+                success: function(data){
+                    console.log('Success')
+                }
+            })
+        });
+    });
+
+
+</script>
 @stop
 

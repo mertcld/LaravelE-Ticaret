@@ -1,6 +1,6 @@
 @extends('layouts.admindefault')
     <head>
-  <title>Kullanıcılar</title>
+  <title>Siparişler</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
 <body>
 
 <div class="container">
-  <h2>Kullanıcılar</h2>
+  <h2>Siparişler</h2>
              
   <table class="table table-striped">
     <thead>
@@ -30,8 +30,8 @@
         @foreach($orders as $order)
     <tr>
         <td>{{$order['id']}}</td>
-        <td>{{$order['toplamFiyat']}}</td>
-        <td>{{$order['adet']}}</td>
+        <td>{{$order['totalAmount']}}</td>
+        <td>{{$order['quantity']}}</td>
     </tr>
     @endforeach
     </tbody>

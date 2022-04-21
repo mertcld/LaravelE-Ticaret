@@ -12,4 +12,13 @@ class UrunController extends Controller
         $data = ProductModel::all();
         return view ('hesap.admin.urun.urungoruntule',['products'=>$data]);
     }
+
+    function changeMemberStatus(Request $request){
+
+        $products = ProductModel::find($request->id);
+        $products->is_active = $request -> status;
+        $products -> save();
+
+
+    }
 }

@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\SiparisController;
 use App\Http\Controllers\Admin\UrunController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\KategoriController;
+
 use App\Http\Controllers\HesabimController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PasswordResetController;
@@ -15,7 +17,6 @@ use App\Http\Controllers\Iletisim;
 use App\Http\Controllers\ResimYukle;
 use App\Http\Controllers\HesapIslemleri;
 use App\Http\Controllers\AdminHesapIslemleri;
-use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LogOutController;
 use App\Http\Controllers\SayfaController;
 use App\Models\KullanicilarModel;
@@ -139,6 +140,10 @@ Route::get('/siparisgoruntule',[SiparisController::class, 'show']);
 // admin paneli urun sayfasi
 
 Route::get('/urungoruntule',[UrunController::class, 'show']);
+
+
+Route::get('/kategoriekle',[KategoriController::class, 'index']);
+Route::post('/kategoriekle',[KategoriController::class, 'add']);
 
 
 
