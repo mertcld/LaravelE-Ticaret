@@ -123,9 +123,8 @@ Route::post('/iletisim-form',[Iletisim::class,'ekle'])->name('iletisimform');
 
 // admin paneli kullanici sayfasi
 
-Route::get('/kullanicigoruntule', function () {
-    return view('hesap.admin.kullanici.kullanicigoruntule');
-});
+Route::get('/kullanicigoruntule',[UserController::class, 'show']);
+
 
 
 // admin paneli siparis sayfasi
