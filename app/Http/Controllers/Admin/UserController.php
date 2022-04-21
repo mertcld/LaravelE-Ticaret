@@ -20,4 +20,13 @@ class UserController extends Controller
         $data = KullanicilarModel::all();
         return view ('hesap.admin.kullanicigoruntule',['kullanicilar'=>$data]);
     }
+
+    function changeMemberStatus(Request $request){
+
+        $kullanicilar = KullanicilarModel::find($request->id);
+        $kullanicilar->is_active = $request -> status;
+        $kullanicilar -> save();
+
+
+    }
 }

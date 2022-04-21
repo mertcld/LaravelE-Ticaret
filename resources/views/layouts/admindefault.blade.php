@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yönetici Paneli</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
@@ -203,6 +203,7 @@ a {
                     <i class='fas fa-home nav_icon'></i> <span class="nav_name">Anasayfa</span> </a> 
                     <a href="{{url('/kullanicigoruntule')}}" class="nav_link"> <i class='fas fa-home nav_icon'></i> <span class="nav_name">Kullanıcı İşlemleri</span> </a> 
                     <a href="{{url('/urungoruntule')}}" class="nav_link"> <i class='fas fa-home nav_icon'></i> <span class="nav_name">Ürün İşlemleri</span> </a> 
+                    <a href="{{url('/kategorigoruntule')}}" class="nav_link"> <i class='fas fa-home nav_icon'></i> <span class="nav_name">Kategori İşlemleri</span> </a> 
                     <a href="{{url('/siparisgoruntule')}}" class="nav_link"> <i class='fas fa-home nav_icon'></i><span class="nav_name">Sipariş İşlemleri</span> </a>
                     
             </div> <a href="#" class="nav_link"> <i class='fas fa-home nav_icon'></i> <span class="nav_name">Çıkış</span> </a>

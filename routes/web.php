@@ -13,6 +13,7 @@ use App\Http\Controllers\Iletisim;
 use App\Http\Controllers\ResimYukle;
 use App\Http\Controllers\HesapIslemleri;
 use App\Http\Controllers\AdminHesapIslemleri;
+use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LogOutController;
 use App\Http\Controllers\SayfaController;
 use App\Models\KullanicilarModel;
@@ -124,7 +125,9 @@ Route::post('/iletisim-form',[Iletisim::class,'ekle'])->name('iletisimform');
 // admin paneli kullanici sayfasi
 
 Route::get('/kullanicigoruntule',[UserController::class, 'show']);
+Route::get('/changeStatus',[UserController::class,'changeMemberStatus'])->name('changeStatus');
 
+Route::get('/kategorigoruntule',[KategoriController::class, 'show']);
 
 
 // admin paneli siparis sayfasi
