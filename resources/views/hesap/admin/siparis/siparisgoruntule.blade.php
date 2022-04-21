@@ -22,25 +22,16 @@
     <thead>
       <tr>
         <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Durum</th>
+        <th>Toplam Fiyat</th>
+        <th>Adet</th>
       </tr>
     </thead>
     <tbody>
-        @foreach($kullanicilar as $kullanici)
+        @foreach($orders as $order)
     <tr>
-        <td>{{$kullanici['id']}}</td>
-        <td>{{$kullanici['name']}}</td>
-        <td>{{$kullanici['email']}}</td>
-        <td>
-            <input data-id = "{{$kullanici -> id}}" class = "toggle-class" type = "checkbox"
-            data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Aktif" data-off = "Pasif"
-                {{$kullanici -> is_active ? 'checked' : ''}}>
-            
-
-        </td>
+        <td>{{$order['id']}}</td>
+        <td>{{$order['toplamFiyat']}}</td>
+        <td>{{$order['adet']}}</td>
     </tr>
     @endforeach
     </tbody>
@@ -49,28 +40,7 @@
 
 </body>
     </div> 
-<script>
-    $ (document).ready(function(){
-        $("#kullanici").DataTable()
-        });
-    $ (function (){
-        $('.toggle-class').change(function() {
-            var status = $(this).prop('checked') == true ? 1 : 0;
-            var kullanici_id = $(this).data('id');
-            $.ajax({
-                type: "GET",
-                dataType: "json",
-                url: '/changestatus',
-                data: {'is_active':status, 'id': kullanici_id},
-                success: function(data){
-                    console.log('Success')
-                }
-            })
-        });
-    });
 
-
-</script>
-   
+  
 @stop
 

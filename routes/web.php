@@ -2,6 +2,8 @@
 
 <?php
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\SiparisController;
+use App\Http\Controllers\Admin\UrunController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\HesabimController;
 use Illuminate\Support\Facades\Route;
@@ -132,16 +134,12 @@ Route::get('/kategorigoruntule',[KategoriController::class, 'show']);
 
 // admin paneli siparis sayfasi
 
-Route::get('/siparisgoruntule', function () {
-    return view('hesap.admin.siparis.siparisgoruntule');
-});
-
+Route::get('/siparisgoruntule',[SiparisController::class, 'show']);
 
 // admin paneli urun sayfasi
 
-Route::get('/urungoruntule', function () {
-    return view('hesap.admin.urun.urungoruntule');
-});
+Route::get('/urungoruntule',[UrunController::class, 'show']);
+
 
 
 Route::get('users', [UserController::class,'index']);
