@@ -34,9 +34,9 @@
             @endif
 
             
-            <form acion = "add" method = "post" >
+            <form action = {{route('kategoriekle')}} method = "post" >
                 @csrf
-                <div class = "form-group">
+                <div class = "form-group"> 
                     <label for ="">Name</label>
                     <input type = "text" class = "form-control" name = "name" placeholder="Kategori Adı Giriniz" value = "{{ old('name')}}" >
                     <span style = "color: red">@error('name'){{$message}} @enderror</span>

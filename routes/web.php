@@ -141,10 +141,13 @@ Route::get('/siparisgoruntule',[SiparisController::class, 'show']);
 
 Route::get('/urungoruntule',[UrunController::class, 'show']);
 
+//kategori ekle
+Route::get('/kategori/ekle',[KategoriController::class, 'index']);
+Route::post('/kategoriekle',[KategoriController::class, 'add'])->name('kategoriekle');
 
-Route::get('/kategoriekle',[KategoriController::class, 'index']);
-Route::post('/kategoriekle',[KategoriController::class, 'add']);
-
+//urun ekle
+Route::get('/urun/ekle',[UrunController::class, 'index']);
+Route::post('/urunekle',[UrunController::class, 'add'])->name('urunekle'); 
 
 
 Route::get('users', [UserController::class,'index']);

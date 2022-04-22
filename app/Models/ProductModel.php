@@ -18,6 +18,7 @@ class ProductModel extends Model
         'picture',
         'haveStock',
         'isSale',
-        'isDeleted'
+        'isDeleted',
+        'categoryId'
     ];
 }

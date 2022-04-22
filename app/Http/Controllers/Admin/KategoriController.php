@@ -35,3 +35,4 @@ class KategoriController extends Controller
         
     }
 }
+
