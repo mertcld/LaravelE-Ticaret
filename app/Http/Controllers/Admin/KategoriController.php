@@ -13,6 +13,7 @@ class KategoriController extends Controller
         $data = CategoryModel::all();
         return view ('hesap.admin.kategori.kategorigoruntule',['categories'=>$data]);
     }
+    
      function index(Request $request){
        
         return view ('hesap.admin.kategori.kategoriekle');

@@ -21,9 +21,9 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Id</th>
+        <th>Sipariş Id</th>
         <th>Toplam Fiyat</th>
-        <th>Adet</th>
+        <th>Ürünler</th>
       </tr>
     </thead>
     <tbody>

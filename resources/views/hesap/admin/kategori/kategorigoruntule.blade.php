@@ -11,18 +11,20 @@
 
 @section('content')
    
-    <div class="height-100 bg-light">
-        
+    
 <body>
-
+<div class="height-100 bg-light">
+        
 <div class="container">
   <h2>Kategoriler</h2>
-             
+  <div style="float:right;margin:0 20px">
+    <a class="btn btn-primary " href="{{url('/kategori/ekle')}}">Kategori Ekle</a>
+    </div>      
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Id</th>
-        <th>Adı</th>
+        <th>Kategori Id</th>
+        <th>Kategori Adı</th>
        
       </tr>
     </thead>

@@ -1,5 +1,5 @@
 @extends('layouts.admindefault')
-    <head>
+    
   <title>Ürünler</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,12 +17,14 @@
 
 <div class="container">
   <h2>Ürünler</h2>
-             
-  <table class="table table-striped">
+  <div style="float:right;margin:0 20px">
+    <a class="btn btn-primary " href="{{url('/urun/ekle')}}">Ürün Ekle</a>
+    </div>
+    <table class="table table-striped">
     <thead>
       <tr>
-        <th>Id</th>
-        <th>Name</th>
+        <th>Ürün Id</th>
+        <th>Ürün Adı</th>
         <th>Fiyat</th>
         <th>Adet</th>
         <th>Açıklama</th>

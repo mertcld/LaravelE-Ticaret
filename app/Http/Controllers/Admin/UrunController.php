@@ -37,7 +37,6 @@ class UrunController extends Controller
             'picture'=> 'required',
             'haveStock'=> 'required',
             'isSale'=> 'required',
-            'isDeleted' => 'required',
             'categoryId' => 'required',
 
         ]);
@@ -50,7 +49,6 @@ class UrunController extends Controller
             'picture'=> $request-> input('picture'),
             'haveStock'=> $request-> input('haveStock'),
             'isSale'=> $request-> input('isSale'),
-            'isDeleted' => $request-> input('isDeleted'),
             'categoryId' => $request-> input('categoryId')
         ]);
 

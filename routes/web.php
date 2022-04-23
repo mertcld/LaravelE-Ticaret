@@ -22,11 +22,11 @@ use App\Http\Controllers\SayfaController;
 use App\Models\KullanicilarModel;
 
 Route::redirect('/', '/index');
-Route::get('/index', function () {
-    return view('pages.index');
-})->name('index');
+// Route::get('/index', function () {
+//     return view('pages.index');
+// })->name('index');
 
-//Route::get('/index',[SayfaController::class,'userindex'])->name('index');
+Route::get('/index',[SayfaController::class,'userindex'])->name('index');
 Route::get('/magaza', function () {
     return view('pages.magaza');
 })->name('magaza');

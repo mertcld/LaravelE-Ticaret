@@ -1,6 +1,6 @@
 @extends('layouts.admindefault')
     <head>
-  <title>Kategori Ekle</title>
+  <title>Ürün Ekle</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -70,27 +70,19 @@
 
                 <div class = "form-group">
                     <label for ="">Stok Durumu </label>
-                    <input type = "checkbox" class = "toggle-class" data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Stokta" data-off = "Stokta Değil" name = "haveStock" placeholder="Ürün Stok Durumu Giriniz" value = "{{ old('haveStock')}}" >
+                    <input type = "checkbox" value="true" name = "haveStock" placeholder="Ürün Stok Durumu Giriniz" >
                     <span style = "color: red">@error('haveStock'){{$message}} @enderror</span>
                 </div>
 
                 <div class = "form-group">
                     <label for ="">Satış Durumu </label>
-                    <input type = "checkbox" class = "toggle-class" data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Satışta" data-off = "Satışta Değil" name = "isSale" placeholder="Ürün Satış Durumu Giriniz" value = "{{ old('isSale')}}" >
+                    <input type = "checkbox" value="true"   name = "isSale" placeholder="Ürün Satış Durumu Giriniz"  >
                     <span style = "color: red">@error('isSale'){{$message}} @enderror</span>
                 </div>
 
-                <div class = "form-group">
-                    <label for ="">Silinme Durumu</label>
-                   <input type = "checkbox" class = "toggle-class" data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Silindi" data-off = "Silinmedi" name = "isDeleted" placeholder="Ürün Silinme Durumu Giriniz" value = "{{ old('isDeleted')}}" >
-                    <span style = "color: red">@error('isDeleted'){{$message}} @enderror</span>
-                </div>
-
+              
                   <div class = "form-group">
-                    <label for ="">Kategory ID</label>
+                    <label for ="">Kategori ID</label>
                     <input type = "text" class = "form-control" name = "categoryId" placeholder="Kategory Id Giriniz" value = "{{ old('isDeleted')}}" >
                     <span style = "color: red">@error('isDeleted'){{$message}} @enderror</span>
                 </div>
