@@ -1,4 +1,4 @@
-@extends('layouts.default')
+
 @section('css')
 <title>Anasayfa - MeGi</title>
 

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class KategoriController extends Controller
 {
-     function show(){
+    function show(){
         $data = CategoryModel::all();
         return view ('hesap.admin.kategori.kategorigoruntule',['categories'=>$data]);
     }
@@ -18,6 +18,7 @@ class KategoriController extends Controller
        
         return view ('hesap.admin.kategori.kategoriekle');
     }
+
     function add(Request $request){
 
         $request -> validate([

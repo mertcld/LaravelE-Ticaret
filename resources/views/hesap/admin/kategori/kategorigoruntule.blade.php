@@ -18,7 +18,7 @@
 <div class="container">
   <h2>Kategoriler</h2>
   <div style="float:right;margin:0 20px">
-    <a class="btn btn-primary " href="{{url('/kategori/ekle')}}">Kategori Ekle</a>
+    <a class="btn btn-primary " href="{{url('/kategori/ekle')}}">Kategori Görüntüle</a>
     </div>      
   <table class="table table-striped">
     <thead>

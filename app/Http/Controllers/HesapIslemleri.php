@@ -30,7 +30,7 @@ class HesapIslemleri extends Controller
             "email"=>$request->email, //virgül önemli olması lazım
             "password"=>Hash::make($request->password),
         ]);
-        return view('hesap.girisyap');
+        return view('hesap.kullanici.girisyap');
     }
 
     public function loginpost(Request $request){
