@@ -19,6 +19,8 @@ use App\Http\Controllers\HesapIslemleri;
 use App\Http\Controllers\AdminHesapIslemleri;
 use App\Http\Controllers\LogOutController;
 use App\Http\Controllers\SayfaController;
+use App\Http\Controllers\MagazaController;
+use App\Http\Controllers\SepetController;
 use App\Models\KullanicilarModel;
 
 Route::redirect('/', '/index');
@@ -27,9 +29,11 @@ Route::redirect('/', '/index');
 // })->name('index');
 
 Route::get('/index',[SayfaController::class,'userindex'])->name('index');
-Route::get('/magaza', function () {
-    return view('pages.magaza');
-})->name('magaza');
+// Route::get('/magaza', function () {
+//     return view('pages.magaza');
+// })->name('magaza');
+
+Route::get('/magaza',[MagazaController::class,'magazaGet'])->name('magaza');
 
 Route::get('/meyveler', function () {
     return view('kategoriler.meyveler');
@@ -151,3 +155,7 @@ Route::post('/urunekle',[UrunController::class, 'add'])->name('urunekle');
 
 
 Route::get('users', [UserController::class,'index']);
+
+
+Route::get('/sepet', [SepetController::class,'sepetGet'])->name('sepet');
+Route::get('/invoice', [SepetController::class,'invoiceGet'])->name('invoice');

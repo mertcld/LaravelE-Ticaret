@@ -8,6 +8,7 @@ use App\Models\KullanicilarModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use App\Models\CategoryModel;
 
 class HesabimController extends Controller
 {
@@ -15,11 +16,12 @@ class HesabimController extends Controller
         
         $user = Session()->get('user');
         $kullanici=KullanicilarModel::where("id",$user->id)->first();
-
+        $category = CategoryModel::all();
         $dizi = [
             "id"=>$kullanici->id,
             "Adsoyad"=>$kullanici->name,
             "Email"=>$kullanici->email,
+            "categories"=>$category,
           
         ];
         return view("hesap.kullanici.hesabim",$dizi);

@@ -18,6 +18,6 @@ class Iletisim extends Controller
             "telefon"=>$request->telefon,
             "mail"=>$request->mail,
         ]);
-        echo 'Bilgileriniz gönderilmiştir. En kısa sürede iletişime geçilecektir.';
+        echo 'Bültene abone oldunuz. Bütün yeniliklerimizden ilk siz haberdar olacaksınız.';
     }
 }

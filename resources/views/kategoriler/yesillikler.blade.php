@@ -1635,14 +1635,15 @@
                 <div class="row align-items-center">
                     <div class="col-md-5 col-lg-6 col-xl-7">
                         <div class="news-text">
-                            <h2>Get 20% Discount for Subscriber</h2>
-                            <p>Lorem ipsum dolor consectetur adipisicing accusantium</p>
+                            <h2> 20% İndirim İçin Abone Olun</h2>
+                            <p>Yeniliklerden ilk sizin haberiniz olsun!</p>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6 col-xl-5">
-                        <form class="news-form">
-                            <input type="text" placeholder="Enter Your Email Address">
-                            <button><span><i class="icofont-ui-email"></i>Subscribe</span></button>
+                        <form class="news-form" action="{{route('iletisimform')}}" method="POST"> 
+                @csrf
+                            <input type="text" name="mail" placeholder="Email Giriniz">
+                            <button type="submit"><span><i class="icofont-ui-email"></i>Abone Ol</span></button>
                         </form>
                     </div>
                 </div>
@@ -1665,8 +1666,8 @@
                                 <i class="fas fa-truck"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>free home delivery</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Eve Ücretsiz Teslim</h5>
+                                <p>75 ₺ Üzeri alışverişlerinizde kapınıza hızlı ve ücretsiz teslim!</p>
                             </div>
                         </div>
                     </div>
@@ -1676,8 +1677,8 @@
                                 <i class="fas fa-sync-alt"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>instant return policy</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Geri Dönüşebilir Poşetler</h5>
+                                <p>Doğayı önemsiyoruz.. Tüm siparişleriniz geri dönüşebilir poşetlerle getirilmektedir.</p>
                             </div>
                         </div>
                     </div>
@@ -1687,8 +1688,8 @@
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>quick support system</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Hızlı Canlı Destek</h5>
+                                <p>Siparişiniz veya herhangi bir konuda anında yanınızdayız!</p>
                             </div>
                         </div>
                     </div>
@@ -1698,8 +1699,8 @@
                                 <i class="fas fa-lock"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>secure payment way</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Güvenli Ödeme Seçeneği</h5>
+                                <p>3D Secure Sistemimiz ile güvenli ödeme yapabilirsiniz!</p>
                             </div>
                         </div>
                     </div>

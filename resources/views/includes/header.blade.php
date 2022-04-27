@@ -66,18 +66,18 @@
                     </form>
 
                     <div class="header-widget-group">
-                        <a href="compare.html" class="header-widget" title="Compare List">
+                        <a href="#" class="header-widget" title="Compare List">
                             <i class="fas fa-random"></i>
                             <sup>0</sup>
                         </a>
-                        <a href="wishlist.html" class="header-widget" title="Wishlist">
+                        <a href="#" class="header-widget" title="Wishlist">
                             <i class="fas fa-heart"></i>
                             <sup>0</sup>
                         </a>
                         <button class="header-widget header-cart" title="Cartlist">
                             <i class="fas fa-shopping-basket"></i>
-                            <sup>9+</sup>
-                            <span>Toplam Fiyat<small>345.00 ₺</small></span>
+                            <sup>2</sup>
+                            <span>Toplam Fiyat<small>65.00 ₺</small></span>
                         </button>
                     </div>
                 </div>
@@ -322,7 +322,7 @@
             <div class="cart-header">
                 <div class="cart-total">
                     <i class="fas fa-shopping-basket"></i>
-                    <span>total item (5)</span>
+                    <span>Toplam Ürün (5)</span>
                 </div>
                 <button class="cart-close"><i class="icofont-close"></i></button>
             </div>
@@ -367,76 +367,19 @@
                         </div>
                     </div>
                 </li>
-                <li class="cart-item">
-                    <div class="cart-media">
-                        <a href="#"><img src="/images/product/03.jpg" alt="product"></a>
-                        <button class="cart-delete"><i class="far fa-trash-alt"></i></button>
-                    </div>
-                    <div class="cart-info-group">
-                        <div class="cart-info">
-                            <h6><a href="product-single.html">existing product name</a></h6>
-                            <p>Unit Price - $8.75</p>
-                        </div>
-                        <div class="cart-action-group">
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1">
-                                <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                            </div>
-                            <h6>$56.98</h6>
-                        </div>
-                    </div>
-                </li>
-                <li class="cart-item">
-                    <div class="cart-media">
-                        <a href="#"><img src="/images/product/04.jpg" alt="product"></a>
-                        <button class="cart-delete"><i class="far fa-trash-alt"></i></button>
-                    </div>
-                    <div class="cart-info-group">
-                        <div class="cart-info">
-                            <h6><a href="product-single.html">existing product name</a></h6>
-                            <p>Unit Price - $8.75</p>
-                        </div>
-                        <div class="cart-action-group">
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1">
-                                <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                            </div>
-                            <h6>$56.98</h6>
-                        </div>
-                    </div>
-                </li>
-                <li class="cart-item">
-                    <div class="cart-media">
-                        <a href="#"><img src="/images/product/05.jpg" alt="product"></a>
-                        <button class="cart-delete"><i class="far fa-trash-alt"></i></button>
-                    </div>
-                    <div class="cart-info-group">
-                        <div class="cart-info">
-                            <h6><a href="product-single.html">existing product name</a></h6>
-                            <p>Unit Price - $8.75</p>
-                        </div>
-                        <div class="cart-action-group">
-                            <div class="product-action">
-                                <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1">
-                                <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                            </div>
-                            <h6>$56.98</h6>
-                        </div>
-                    </div>
-                </li>
+              
+             
+           
             </ul>
             <div class="cart-footer">
-                <button class="coupon-btn">Do you have a coupon code?</button>
+                <button class="coupon-btn">Kupon Kodun Var mı?</button>
                 <form class="coupon-form">
-                    <input type="text" placeholder="Enter your coupon code">
-                    <button type="submit"><span>apply</span></button>
+                    <input type="text" placeholder="Kupon kodunu giriniz.">
+                    <button type="submit"><span>Uygula</span></button>
                 </form>
-                <a class="cart-checkout-btn" href="checkout.html">
-                    <span class="checkout-label">Proceed to Checkout</span>
-                    <span class="checkout-price">$369.78</span>
+                <a class="cart-checkout-btn" href="{{route('sepet')}}">
+                    <span class="checkout-label">Toplam Tutar</span>
+                    <span class="checkout-price">369.78 ₺</span>
                 </a>
             </div>
         </aside>
@@ -477,61 +420,7 @@
                             <li><a href="home-category.html">Home category</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a class="nav-link dropdown-link" href="#"><i class="icofont-food-cart"></i>shop</a>
-                        <ul class="dropdown-list">
-                            <li><a href="shop-5column.html">shop 5 column</a></li>
-                            <li><a href="shop-4column.html">shop 4 column<span class="menu-badge">new</span></a></li>
-                            <li><a href="shop-3column.html">shop 3 column</a></li>
-                            <li><a href="shop-2column.html">shop 2 column</a></li>
-                            <li><a href="shop-1column.html">shop 1 column<span class="menu-badge">new</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link dropdown-link" href="#"><i class="icofont-page"></i>product</a>
-                        <ul class="dropdown-list">
-                            <li><a href="product-tab.html">product tab</a></li>
-                            <li><a href="product-grid.html">product grid<span class="menu-badge">new</span></a></li>
-                            <li><a href="product-video.html">product video<span class="menu-badge">new</span></a></li>
-                            <li><a href="product-simple.html">product simple</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link dropdown-link" href="#"><i class="icofont-bag-alt"></i>my account</a>
-                        <ul class="dropdown-list">
-                            <li><a href="profile.html">profile</a></li>
-                            <li><a href="wishlist.html">wishlist</a></li>
-                            <li><a href="compare.html">compare</a></li>
-                            <li><a href="checkout.html">checkout</a></li>
-                            <li><a href="orderlist.html">order history</a></li>
-                            <li><a href="invoice.html">order invoice</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link dropdown-link" href="#"><i class="icofont-lock"></i>authentic</a>
-                        <ul class="dropdown-list">
-                            <li><a href="login.html">login</a></li>
-                            <li><a href="register.html">register</a></li>
-                            <li><a href="reset-password.html">reset password</a></li>
-                            <li><a href="change-password.html">change password</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link dropdown-link" href="#"><i class="icofont-book-alt"></i>blogs</a>
-                        <ul class="dropdown-list">
-                            <li><a href="blog-grid.html">blog grid</a></li>
-                            <li><a href="blog-standard.html">blog standard</a></li>
-                            <li><a href="blog-details.html">blog details</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link" href="offer.html"><i class="icofont-sale-discount"></i>offers</a></li>
-                    <li><a class="nav-link" href="profile.html"><i class="icofont-user-alt-3"></i>profile</a></li>
-                    <li><a class="nav-link" href="wishlist.html"><i class="icofont-heart"></i>wishlist</a></li>
-                    <li><a class="nav-link" href="checkout.html"><i class="icofont-checked"></i>checkout</a></li>
-                    <li><a class="nav-link" href="orderlist.html"><i class="icofont-settings"></i>order history</a></li>
-                    <li><a class="nav-link" href="faq.html"><i class="icofont-question-circle"></i>need help</a></li>
-                    <li><a class="nav-link" href="contact.html"><i class="icofont-contacts"></i>contact us</a></li>
-                    <li><a class="nav-link" href="login.html"><i class="icofont-logout"></i>logout</a></li>
+                 
                 </ul>
                 <div class="nav-info-group">
                     <div class="nav-info">
@@ -550,7 +439,7 @@
                     </div>
                 </div>
                 <div class="nav-footer">
-                    <p>All Rights Reserved by <a href="#">mertcloud</a></p>
+                    <p>All Rights Reserved by <a href="#">megi</a></p>
                 </div>
             </div>
         </aside>
@@ -574,14 +463,14 @@
             <button class="cart-btn" title="Cartlist">
                 <i class="fas fa-shopping-basket"></i>
                 <span>Sepet</span>
-                <sup>9+</sup>
+                <sup>2+</sup>
             </button>
-            <a href="wishlist.html" title="Wishlist">
+            <a href="#" title="Wishlist">
                 <i class="fas fa-heart"></i>
                 <span>İstek Listesi</span>
                 <sup>0</sup>
             </a>
-            <a href="compare.html" title="Compare List">
+            <a href="#" title="Compare List">
                 <i class="fas fa-random"></i>
                 <span>Karşılaştır</span>
                 <sup>0</sup>
