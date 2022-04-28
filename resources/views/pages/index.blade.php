@@ -673,8 +673,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="promo-img">
-                            <a href=""><img src="/images/promo/home/03.jpg" alt="promo"></a>
+                        <div class="promo-img text-center" >
+                            <a href=""><img src="/images/yarifiyatbanner.jpg" alt="promo"  style="width:75%;height:300px;"></a>
                         </div>
                     </div>
                 </div>
@@ -688,7 +688,7 @@
         <!--=====================================
                     FEATURED PART START
         =======================================-->
-        <section class="section feature-part">
+        <!-- <section class="section feature-part">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -992,64 +992,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--=====================================
                     FEATURE PART END
         =======================================-->
-        <section class="section suggest-part">
-            <div class="container">
-                <ul class="suggest-slider slider-arrow">
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/01.jpg" alt="suggest">
-                            <h5>vegetables <span>34 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/02.jpg" alt="suggest">
-                            <h5>fruits <span>89 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/03.jpg" alt="suggest">
-                            <h5>groceries <span>45 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/04.jpg" alt="suggest">
-                            <h5>dairy farm <span>83 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/05.jpg" alt="suggest">
-                            <h5>sea foods <span>40 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/06.jpg" alt="suggest">
-                            <h5>vegan foods <span>57 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/07.jpg" alt="suggest">
-                            <h5>dry foods <span>23 items</span></h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="suggest-card" href="shop-4column.html">
-                            <img src="images/suggest/08.jpg" alt="suggest">
-                            <h5>fast foods <span>97 items</span></h5>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      
 
         <!--=====================================
                     COUNTDOWN PART START
@@ -1059,13 +1006,13 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mx-auto">
                         <div class="countdown-content">
-                            <h3>special discount offer for vegetable items</h3>
-                            <p>Reprehenderit sed quod autem molestiae aut modi minus veritatis iste dolorum suscipit quis voluptatum fugiat mollitia quia minima</p>
-                            <div class="countdown countdown-clock" data-countdown="2021/09/09">
-                                <span class="countdown-time"><span>00</span><small>days</small></span>
-                                <span class="countdown-time"><span>00</span><small>hours</small></span>
-                                <span class="countdown-time"><span>00</span><small>minutes</small></span>
-                                <span class="countdown-time"><span>00</span><small>seconds</small></span>
+                            <h3>Sebzeler için özel saat özel indirim!</h3>
+                            <p>Tüm sebzelerde geçerli olacak mükemmel indirimler için sabırsızlıkla bekliyoruz..</p>
+                            <div class="countdown countdown-clock" data-countdown="2022/05/11">
+                                <span class="countdown-time"><span>00</span><small>Gün</small></span>
+                                <span class="countdown-time"><span>00</span><small>Saat</small></span>
+                                <span class="countdown-time"><span>00</span><small>Dakika</small></span>
+                                <span class="countdown-time"><span>00</span><small>Saniye</small></span>
                             </div>
                             <a href="{{url('magaza')}}" class="btn btn-inline">
                                 <i class="fas fa-shopping-basket"></i>
@@ -1099,7 +1046,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="section-heading">
-                            <h2>collected new items</h2>
+                            <h2>Yeni Gelen Ürünler</h2>
                         </div>
                     </div>
                 </div>
@@ -1409,13 +1356,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 px-xl-3">
-                        <div class="promo-img">
-                            <a href=""><img src="/images/promo/home/01.jpg" alt="promo"></a>
+                        <div class="promo-img" style="height:500px;">
+                            <a href=""><img src="/images/banner1.jpg" alt="promo" style="height:340px;"></a>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 px-xl-3">
-                        <div class="promo-img">
-                            <a href=""><img src="/images/promo/home/02.jpg" alt="promo"></a>
+                        <div class="promo-img" style="height:550px;">
+                            <a href=""><img src="/images/banner2.jpg" alt="promo"  style="height:340px;"></a>
                         </div>
                     </div>
                 </div>
@@ -2868,113 +2815,13 @@
                 </div>
             </div>
         </section>
-        <!--=====================================
-                    NICHE PART END
-        =======================================-->
-
-
-        <!--=====================================
-                    BRAND PART START
-        =======================================-->
-        <section class="section brand-part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-heading">
-                            <h2>shop by brands</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="brand-slider slider-arrow">
-                    <div class="brand-wrap">
-                        <div class="brand-media">
-                            <img src="/images/brand/01.jpg" alt="brand">
-                            <div class="brand-overlay">
-                                <a href="#"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="brand-meta">
-                            <h4>natural organe</h4>
-                            <p>(45 items)</p>
-                        </div>
-                    </div>
-                    <div class="brand-wrap">
-                        <div class="brand-media">
-                            <img src="/images/brand/02.jpg" alt="brand">
-                            <div class="brand-overlay">
-                                <a href="#"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="brand-meta">
-                            <h4>vegan lover</h4>
-                            <p>(45 items)</p>
-                        </div>
-                    </div>
-                    <div class="brand-wrap">
-                        <div class="brand-media">
-                            <img src="/images/brand/03.jpg" alt="brand">
-                            <div class="brand-overlay">
-                                <a href="#"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="brand-meta">
-                            <h4>organic foody</h4>
-                            <p>(45 items)</p>
-                        </div>
-                    </div>
-                    <div class="brand-wrap">
-                        <div class="brand-media">
-                            <img src="/images/brand/04.jpg" alt="brand">
-                            <div class="brand-overlay">
-                                <a href="#"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="brand-meta">
-                            <h4>ecomart limited</h4>
-                            <p>(45 items)</p>
-                        </div>
-                    </div>
-                    <div class="brand-wrap">
-                        <div class="brand-media">
-                            <img src="/images/brand/05.jpg" alt="brand">
-                            <div class="brand-overlay">
-                                <a href="#"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="brand-meta">
-                            <h4>fresh fortune</h4>
-                            <p>(45 items)</p>
-                        </div>
-                    </div>
-                    <div class="brand-wrap">
-                        <div class="brand-media">
-                            <img src="/images/brand/06.jpg" alt="brand">
-                            <div class="brand-overlay">
-                                <a href="#"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="brand-meta">
-                            <h4>econature</h4>
-                            <p>(45 items)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================
-                    BRAND PART END
-        =======================================-->
-
-
-        <!--=====================================
-                      BLOG PART START
-        =======================================-->
+   
         <section class="section blog-part">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="section-heading">
-                            <h2>Read our articles</h2>
+                            <h2> Blog</h2>
                         </div>
                     </div>
                 </div>
@@ -3103,9 +2950,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-btn-25">
-                            <a href="blog-grid.html" class="btn btn-outline">
+                            <a href="#" class="btn btn-outline">
                                 <i class="fas fa-eye"></i>
-                                <span>view all blog</span>
+                                <span>Hepsini Gör</span>
                             </a>
                         </div>
                     </div>
@@ -3125,14 +2972,15 @@
                 <div class="row align-items-center">
                     <div class="col-md-5 col-lg-6 col-xl-7">
                         <div class="news-text">
-                            <h2>Get 20% Discount for Subscriber</h2>
-                            <p>Lorem ipsum dolor consectetur adipisicing accusantium</p>
+                            <h2> 20% İndirim İçin Abone Olun</h2>
+                            <p>Yeniliklerden ilk sizin haberiniz olsun!</p>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6 col-xl-5">
-                        <form class="news-form">
-                            <input type="text" placeholder="Enter Your Email Address">
-                            <button><span><i class="icofont-ui-email"></i>Subscribe</span></button>
+                        <form class="news-form" action="{{route('iletisimform')}}" method="POST"> 
+                @csrf
+                            <input type="text" name="mail" placeholder="Email Giriniz">
+                            <button type="submit"><span><i class="icofont-ui-email"></i>Abone Ol</span></button>
                         </form>
                     </div>
                 </div>
@@ -3155,8 +3003,8 @@
                                 <i class="fas fa-truck"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>free home delivery</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Eve Ücretsiz Teslim</h5>
+                                <p>75 ₺ Üzeri alışverişlerinizde kapınıza hızlı ve ücretsiz teslim!</p>
                             </div>
                         </div>
                     </div>
@@ -3166,8 +3014,8 @@
                                 <i class="fas fa-sync-alt"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>instant return policy</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Geri Dönüşebilir Poşetler</h5>
+                                <p>Doğayı önemsiyoruz.. Tüm siparişleriniz geri dönüşebilir poşetlerle getirilmektedir.</p>
                             </div>
                         </div>
                     </div>
@@ -3177,8 +3025,8 @@
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>quick support system</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Hızlı Canlı Destek</h5>
+                                <p>Siparişiniz veya herhangi bir konuda anında yanınızdayız!</p>
                             </div>
                         </div>
                     </div>
@@ -3188,8 +3036,8 @@
                                 <i class="fas fa-lock"></i>
                             </div>
                             <div class="intro-content">
-                                <h5>secure payment way</h5>
-                                <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                                <h5>Güvenli Ödeme Seçeneği</h5>
+                                <p>3D Secure Sistemimiz ile güvenli ödeme yapabilirsiniz!</p>
                             </div>
                         </div>
                     </div>
