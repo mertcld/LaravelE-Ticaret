@@ -1,8 +1,15 @@
 @extends('layouts.default')
 @section('css')
 <title>Anasayfa - MeGi</title>
+<meta charset="UTF-8">
+<style type = "text/css">
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
 
-
+    }
+</style>
 <link rel="icon" href="/images/favicon.png">
 
 
@@ -192,9 +199,23 @@
         <!--=====================================
                     BANNER PART END
         =======================================-->
-  <div id="kurlar"></div><script async src="https://dovizmix.com/dovizmix/js/dovizwidget.min.js" type="text/javascript" charset="utf-8" ></script>
+  <!-- <div id="kurlar"></div><script async src="https://dovizmix.com/dovizmix/js/dovizwidget.min.js" type="text/javascript" charset="utf-8" ></script> -->
 
 
+  <?php
+    $site = "https://bigpara.hurriyet.com.tr/doviz/merkez-bankasi-doviz-kurlari/";
+    $parcala = '@<ul>(.*?)</ul>@si';
+    $botara = file_get_contents($site);
+    preg_match_all($parcala, $botara, $gelen);
+    // echo "<pre>";
+    // print_r($gelen);
+    // echo "</pre>";
+    for($i=1; $i<=5; $i++){
+        echo $gelen[0][$i];
+    }
+    
+
+  ?>
      
 
 
