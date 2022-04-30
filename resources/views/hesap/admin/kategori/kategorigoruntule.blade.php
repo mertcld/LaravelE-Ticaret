@@ -36,7 +36,11 @@
         <td>{{$categorie['name']}}</td> 
         <td>
             <a href="{{url('kategoriguncelle/'. $categorie ->id)}}" class="btn btn-primary " >Güncelle</a>
-            <a class="btn btn-primary ">Sil</a>
+            <form action = "{{url('/deletekategori/'.$categorie->id)}}" method = "post">
+            {{ csrf_field() }}
+            {{ method_field('DELETE') }} 
+                <button class = "btn btn-danger" type = "submit">Sil</button>
+            </form>
         </td>
          
     </tr>

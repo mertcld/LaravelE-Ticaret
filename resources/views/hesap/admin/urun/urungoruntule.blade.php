@@ -60,9 +60,16 @@
 
         </td>
          <td>
-           <a href="{{url('urunguncelle/'. $product ->id)}}" class="btn btn-primary " >Güncelle</a>
-            <a class="btn btn-primary ">Sil</a>
+            <div>
+                <a href="{{url('urunguncelle/'. $product ->id)}}" class="btn btn-primary mr-2 " >Güncelle</a>
+            </div>            
+            <form action = "{{url('/delete/'.$product->id)}}" method = "post">
+            {{ csrf_field() }}
+            {{ method_field('DELETE') }} 
+                <button class = "btn btn-danger" type = "submit">Sil</button>
+            </form>
         </td>
+       
         
     </tr> 
     @endforeach

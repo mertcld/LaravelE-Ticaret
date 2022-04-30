@@ -154,21 +154,19 @@ Route::get('/urun/ekle',[UrunController::class, 'index']);
 Route::post('/urun/ekle',[UrunController::class, 'add'])->name('urunekle'); 
 
 
-//guncellemeler
+//urun guncelleme
 Route::get('urunguncelle/{id}',[UrunController::class, 'edit']);
 Route::put('updateproduct/{id}',[UrunController::class, 'update']);
 
+//kategori güncelleme
 Route::get('kategoriguncelle/{id}',[KategoriController::class, 'edit']);
 Route::put('updatecategorie/{id}',[KategoriController::class, 'update']);
 
+//silme islemi
+Route::delete('/delete/{id}',[UrunController::class, 'delete']);
+Route::delete('/deletekategori/{id}',[KategoriController::class, 'delete']);
 
-//urun guncelle
-// Route::get('urunguncelle/{id}',[UrunController::class, 'updateindex']);
-// Route::post('urunguncelle/{id}',[UrunController::class, 'update'])->name('urunguncelle'); 
 
-// //kategori guncelle 
-// Route::get('kategoriguncelle/{id}',[KategoriController::class, 'updateindex']);
-// Route::post('kategoriguncelle/{id}',[KategoriController::class, 'update'])->name('kategoriguncelle'); 
 
 Route::get('users', [UserController::class,'index']);
 

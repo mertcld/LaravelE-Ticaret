@@ -61,5 +61,11 @@ class KategoriController extends Controller
          return back() -> with('succes', 'Kategori başarıyla güncellendi');
     }
 
+    public function delete ($id){
+        $categorie = CategoryModel::find($id);
+        $categorie -> delete();
+        return back() -> with('succes', 'Kategori başarıyla silindi!');
+    }
+
 }
 

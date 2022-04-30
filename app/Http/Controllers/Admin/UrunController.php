@@ -83,9 +83,14 @@ class UrunController extends Controller
         $products -> isSale= $request-> input('isSale');
         $products -> categoryId = $request-> input('categoryId');
         $products -> update();
-        return back() -> with('succes', 'Ürün başarıyla güncellendi');
+        return back() -> with('succes', 'Ürün başarıyla güncellendi.');
     }
 
+    public function delete ($id){
+        $product = ProductModel::find($id);
+        $product -> delete();
+        return back() -> with('succes', 'Ürün başarıyla silindi!');
+    }
 
     // public function save (Request $request){
         
