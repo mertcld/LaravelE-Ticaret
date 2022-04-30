@@ -210,8 +210,10 @@
     // echo "<pre>";
     // print_r($gelen);
     // echo "</pre>";
-    for($i=1; $i<=5; $i++){
-        echo $gelen[0][$i];
+    for($i=1; $i<=1; $i++){
+        echo $gelen[0][1];
+        echo $gelen[0][4];
+        
     }
     
 
