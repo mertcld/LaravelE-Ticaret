@@ -25,6 +25,7 @@
       <tr>
         <th>Kategori Id</th>
         <th>Kategori Adı</th>
+       <th>Düzenle</th>
        
       </tr>
     </thead>
@@ -33,7 +34,11 @@
     <tr>
         <td>{{$categorie['id']}}</td>
         <td>{{$categorie['name']}}</td> 
-        
+        <td>
+            <a href="{{url('kategoriguncelle/'. $categorie ->id)}}" class="btn btn-primary " >Güncelle</a>
+            <a class="btn btn-primary ">Sil</a>
+        </td>
+         
     </tr>
     @endforeach
     </tbody>

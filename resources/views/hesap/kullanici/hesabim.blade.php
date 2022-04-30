@@ -65,7 +65,7 @@
                         <div class="account-card">
                             <div class="account-title">
                                 <h4>İletişim Numarası</h4>
-                                <button data-bs-toggle="modal" data-bs-target="#contact-add">Ekle</button>
+                                <button data-bs-toggle="modal" data-bs-target="#contact-add">İletişim Numarası Ekle</button>
                             </div>
                             <div class="account-content">
                                 <div class="row">

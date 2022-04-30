@@ -151,8 +151,24 @@ Route::post('/kategoriekle',[KategoriController::class, 'add'])->name('kategorie
 
 //urun ekle
 Route::get('/urun/ekle',[UrunController::class, 'index']);
-Route::post('/urunekle',[UrunController::class, 'add'])->name('urunekle'); 
+Route::post('/urun/ekle',[UrunController::class, 'add'])->name('urunekle'); 
 
+
+//guncellemeler
+Route::get('urunguncelle/{id}',[UrunController::class, 'edit']);
+Route::put('updateproduct/{id}',[UrunController::class, 'update']);
+
+Route::get('kategoriguncelle/{id}',[KategoriController::class, 'edit']);
+Route::put('updatecategorie/{id}',[KategoriController::class, 'update']);
+
+
+//urun guncelle
+// Route::get('urunguncelle/{id}',[UrunController::class, 'updateindex']);
+// Route::post('urunguncelle/{id}',[UrunController::class, 'update'])->name('urunguncelle'); 
+
+// //kategori guncelle 
+// Route::get('kategoriguncelle/{id}',[KategoriController::class, 'updateindex']);
+// Route::post('kategoriguncelle/{id}',[KategoriController::class, 'update'])->name('kategoriguncelle'); 
 
 Route::get('users', [UserController::class,'index']);
 

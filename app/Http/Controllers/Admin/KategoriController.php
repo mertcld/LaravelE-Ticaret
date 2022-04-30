@@ -19,6 +19,8 @@ class KategoriController extends Controller
         return view ('hesap.admin.kategori.kategoriekle');
     }
 
+
+
     function add(Request $request){
 
         $request -> validate([
@@ -36,5 +38,28 @@ class KategoriController extends Controller
         }
         
     }
+
+    function updateindex(Request $request){
+       
+        return view ('hesap.admin.kategori.kategoriguncelle');
+    }
+
+      public function edit($id)
+    {
+
+        $categories = CategoryModel::find($id);
+
+        return view('hesap.admin.kategori.kategoriguncelle', compact('categories'));
+    }
+
+    public function update(Request $request, $id){
+
+        $categories = CategoryModel::find($id);
+        $categories -> name = $request-> input('name');
+        $categories -> update();
+
+         return back() -> with('succes', 'Kategori başarıyla güncellendi');
+    }
+
 }
 

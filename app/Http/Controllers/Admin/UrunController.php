@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\ProductModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 
 class UrunController extends Controller
@@ -25,6 +26,10 @@ class UrunController extends Controller
     function index(Request $request){
        
         return view ('hesap.admin.urun.urunekle');
+    }
+    function updateindex(Request $request){
+       
+        return view ('hesap.admin.urun.urunguncelle');
     }
     function add(Request $request){
 
@@ -57,4 +62,52 @@ class UrunController extends Controller
         }
         
     }
+
+    public function edit($id)
+    {
+
+        $products = ProductModel::find($id);
+
+        return view('hesap.admin.urun.urunguncelle', compact('products'));
+    }
+    
+    public function update(Request $request, $id){
+
+        $products = ProductModel::find($id);
+        $products -> name = $request-> input('name');
+        $products -> price = $request-> input('price');
+        $products -> quantity = $request-> input('quantity');
+        $products -> description = $request-> input('description');
+        $products -> picture = $request-> input('picture');
+        $products -> haveStock = $request-> input('haveStock');
+        $products -> isSale= $request-> input('isSale');
+        $products -> categoryId = $request-> input('categoryId');
+        $products -> update();
+        return back() -> with('succes', 'Ürün başarıyla güncellendi');
+    }
+
+
+    // public function save (Request $request){
+        
+    //     if($request->hasfile('picture')){
+    //         $file = $request->file('picture');
+    //         $name=time().$file->getClientOriginalName();
+    //         $file->move(public_path('uploadimg'),$name);
+            
+        
+    //     }
+
+    //     $urun = new \App\Models\ProductModel();
+
+    //     $urun -> name = $request ->get('name');
+    //     $urun -> price = $request ->get('price');
+    //     $urun -> quantity = $request ->get('quantity');
+    //     $urun -> description = $request ->get('description');
+    //     $urun -> picture = $name;
+    //     $urun -> haveStock = $request ->get('haveStock');
+    //     $urun -> isSale = $request ->get('isSale');
+    //     $urun -> categoryId = $request ->get('categoryId');
+    //     $urun -> save();
+
+    // }
 }

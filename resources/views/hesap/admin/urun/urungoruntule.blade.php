@@ -31,7 +31,7 @@
         <th>Resim</th>
         <th>Stokta mı</th>
         <th>Satışta mı</th>
-
+        <th>Güncelle</th>
       </tr>
     </thead>
     <tbody>
@@ -58,6 +58,10 @@
                 {{$product -> isSale ? 'checked' : ''}}>
             
 
+        </td>
+         <td>
+           <a href="{{url('urunguncelle/'. $product ->id)}}" class="btn btn-primary " >Güncelle</a>
+            <a class="btn btn-primary ">Sil</a>
         </td>
         
     </tr> 
