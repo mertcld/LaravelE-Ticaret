@@ -20,7 +20,6 @@ class UrunController extends Controller
         $products->is_active = $request -> status;
         $products -> save();
 
-
     }
 
     function index(Request $request){
@@ -38,7 +37,6 @@ class UrunController extends Controller
             'haveStock'=> 'required',
             'isSale'=> 'required',
             'categoryId' => 'required',
-
         ]);
 
         $query = DB::table('products') -> insert([

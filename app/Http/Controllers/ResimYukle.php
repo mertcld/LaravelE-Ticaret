@@ -10,6 +10,6 @@ class ResimYukle extends Controller
        $resimadi=rand(0,1000).'.'.$request->resim->getClientOriginalName(); // dosya ismini alır
       // echo $request ->resim->getClientOriginalExtension(); // dosya uzantısını alır
       $yukle=$request->resim->move(public_path('uploadimg'),$resimadi);
-  echo $yukle;
+      echo $yukle;
    }
 }

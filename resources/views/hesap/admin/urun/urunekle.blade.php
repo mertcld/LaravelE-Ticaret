@@ -70,21 +70,33 @@
 
                 <div class = "form-group">
                     <label for ="">Stok Durumu </label>
-                    <input type = "checkbox" value="true" name = "haveStock" placeholder="Ürün Stok Durumu Giriniz" >
+                    <!-- <input type = "text" class = "form-control" name = "haveStock" placeholder="Ürün Stok Durumu Giriniz" value = "{{ old('haveStock')}}" > -->
+                    <select id="haveStock" name = "haveStock">
+                        <option value="Seçim Yap">Seçiniz</option>
+                        <option value="1">Stokta</option>
+                        <option value="0">Stokta Değil</option>
+                    </select>
+                    
+                    <!-- <input type = "checkbox" value="true" name = "haveStock" placeholder="Ürün Stok Durumu Giriniz" > -->
                     <span style = "color: red">@error('haveStock'){{$message}} @enderror</span>
                 </div>
 
                 <div class = "form-group">
                     <label for ="">Satış Durumu </label>
-                    <input type = "checkbox" value="true"   name = "isSale" placeholder="Ürün Satış Durumu Giriniz"  >
+                    <!-- <input type = "text" class = "form-control" name = "isSale" placeholder="Ürün Satış Durumu Giriniz" value = "{{ old('isSale')}}" > -->
+                    <!-- <input type = "checkbox" value="true" name = "isSale" placeholder="Ürün Satış Durumu Giriniz"  > -->
+                   <select id="isSale" name = "isSale">
+                        <option value="Seçim Yap">Seçiniz</option>
+                        <option value="1">Satışta</option>
+                        <option value="0 ">Satışta Değil</option>
+                    </select>
                     <span style = "color: red">@error('isSale'){{$message}} @enderror</span>
                 </div>
-
-              
+  
                   <div class = "form-group">
                     <label for ="">Kategori ID</label>
-                    <input type = "text" class = "form-control" name = "categoryId" placeholder="Kategory Id Giriniz" value = "{{ old('isDeleted')}}" >
-                    <span style = "color: red">@error('isDeleted'){{$message}} @enderror</span>
+                    <input type = "text" class = "form-control" name = "categoryId" placeholder="Kategory Id Giriniz" value = "{{ old('categoryId')}}" >
+                    <span style = "color: red">@error('categoryId'){{$message}} @enderror</span>
                 </div>
 
                 

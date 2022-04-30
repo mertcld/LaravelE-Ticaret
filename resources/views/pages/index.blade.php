@@ -212,10 +212,8 @@
     // echo "</pre>";
     for($i=1; $i<=1; $i++){
         echo $gelen[0][1];
-        echo $gelen[0][4];
-        
+        echo $gelen[0][4];   
     }
-    
 
   ?>
      
