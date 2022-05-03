@@ -34,11 +34,9 @@
         <td>{{$kullanici['name']}}</td>
         <td>{{$kullanici['email']}}</td>
         <td>
-            <input data-id = "{{$kullanici -> id}}" class = "toggle-class" type = "checkbox"
-            data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Aktif" data-off = "Pasif"
-                {{$kullanici -> is_active ? 'checked' : ''}}>
-            
+            <input data-id="{{$kullanici->id}}" class="toggle-class" type="checkbox" data-onstyle="success"
+                            data-offstyle="danger" data-toggle="toggle" data-on="Aktif" data-off="Pasif"
+                            {{ $kullanici->is_active ? 'checked' : '' }}>
 
         </td>
     </tr>
@@ -50,22 +48,58 @@
 </body>
     </div> 
 <script>
-    $ (document).ready(function(){
-        $("#kullanici").DataTable()
-        });
-    $ (function (){
+    // $('.toggle-class').on('change',function(){
+    //     var status = $(this).prop('checked') == true ? 1 : 0;
+    //     alert(status);
+    //     var kullanici_id = $(this).data('id');
+    //     alert(kullanici_id);
+    //     $.ajax({
+    //         type: 'GET',
+    //         dataType: 'JSON',
+    //         url: '{{ route('changeStatus') }}',
+    //         data: {
+    //             'is_active': status,
+    //             'id': kullanici_id
+    //         }
+    //     })
+    // });
+
+    // $ (document).ready(function(){
+    //     $("$kullanici").DataTable()
+    //     });
+    // $ (function (){
+    //     $('.toggle-class').change(function() {
+    //         var is_active = $(this).prop('checked') == true ? 1 : 0;
+    //         var id = $(this).data('id');
+    //         $.ajax({
+    //             type: "GET",
+    //             dataType: "json",
+    //             url: '/changeStatus',
+    //             data: {
+    //                 'is_active':is_active,
+    //                  'id': id,
+    //             },
+    //             success: function(data){
+    //                 console.log('Success')
+    //             }
+    //         })
+    //     });
+    // });
+
+    $(function() {
         $('.toggle-class').change(function() {
-            var status = $(this).prop('checked') == true ? 1 : 0;
-            var kullanici_id = $(this).data('id');
+        var is_active = $(this).prop('checked') == true ? 1 : 0;
+        var id = $(this).data('id');
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: '/changestatus',
-                data: {'is_active':status, 'id': kullanici_id},
+                url: '/changeStatus',
+                data: {'is_active': is_active, 'id': id},
                 success: function(data){
                     console.log('Success')
                 }
-            })
+            });
+        
         });
     });
 

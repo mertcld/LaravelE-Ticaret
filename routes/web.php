@@ -133,6 +133,9 @@ Route::post('/iletisim-form',[Iletisim::class,'ekle'])->name('iletisimform');
 
 Route::get('/kullanicigoruntule',[UserController::class, 'show']);
 Route::get('/changeStatus',[UserController::class,'changeMemberStatus'])->name('changeStatus');
+Route::get('/changeStokStatus',[UrunController::class,'changeStokStatus'])->name('changeStokStatus');
+Route::get('/changeSaleStatus',[UrunController::class,'changeSaleStatus'])->name('changeSaleStatus');
+
 
 Route::get('/kategorigoruntule',[KategoriController::class, 'show']);
 

@@ -21,12 +21,10 @@ class UserController extends Controller
         return view ('hesap.admin.kullanicigoruntule',['kullanicilar'=>$data]);
     }
 
-    function changeMemberStatus(Request $request){
-
-        $kullanicilar = KullanicilarModel::find($request->id);
-        $kullanicilar->is_active = $request -> status;
-        $kullanicilar -> save();
-
-
+     public function changeMemberStatus(Request $request)
+    {
+        $members = KullanicilarModel::find($request->id);
+        $members->is_active = $request->is_active;
+        $members->save();
     }
 }

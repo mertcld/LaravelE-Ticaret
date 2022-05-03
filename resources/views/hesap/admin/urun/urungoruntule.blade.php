@@ -44,18 +44,17 @@
         <td>{{$product['description']}}</td>
         <td>{{$product['picture']}}</td>
          <td>
-            <input data-id = "{{$product -> id}}" class = "toggle-class" type = "checkbox"
-            data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Stokta" data-off = "Stokta Değil"
-                {{$product -> haveStock ? 'checked' : ''}}>
+            <input data-id="{{$product->id}}" class="toggle-class" type="checkbox" data-onstyle="success"
+                            data-offstyle="danger" data-toggle="toggle" data-on="Stokta" data-off="Stokta Değil"
+                            {{ $product->haveStock ? 'checked' : '' }}>
             
 
         </td>
        <td>
-            <input data-id = "{{$product -> id}}" class = "toggle-class" type = "checkbox"
-            data-onstyle = "success" 
-                data-offstyle = "danger" data-toggle ="toggle" data-on = "Satışta" data-off = "Satışta Değil"
-                {{$product -> isSale ? 'checked' : ''}}>
+            <input data-id="{{$product->id}}" class="toggle-class" type="checkbox" data-onstyle="success"
+                            data-offstyle="danger" data-toggle="toggle" data-on="Satışta" data-off="Satışta Değil"
+                            {{ $product->isSale ? 'checked' : '' }}>
+
             
 
         </td>
@@ -86,13 +85,13 @@
         });
     $ (function (){
         $('.toggle-class').change(function() {
-            var status = $(this).prop('checked') == true ? 1 : 0;
-            var product_id = $(this).data('id');
+            var isSale = $(this).prop('checked') == true ? 1 : 0;
+            var id = $(this).data('id');
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: '/changestatus',
-                data: {'isSale':status, 'id': product_id},
+                url: '/changeSaleStatus',
+                data: {'isSale':isSale, 'id': id},
                 success: function(data){
                     console.log('Success')
                 }
@@ -103,18 +102,15 @@
 </script>
 
 <script>
-    $ (document).ready(function(){
-        $("#product").DataTable()
-        });
     $ (function (){
         $('.toggle-class').change(function() {
-            var status = $(this).prop('checked') == true ? 1 : 0;
-            var product_id = $(this).data('id');
+            var haveStock = $(this).prop('checked') == true ? 1 : 0;
+            var id = $(this).data('id');
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: '/changestatus',
-                data: {'haveStock':status, 'id': product_id},
+                url: '/changeStokStatus',
+                data: {'haveStock':haveStock, 'id': id},
                 success: function(data){
                     console.log('Success')
                 }

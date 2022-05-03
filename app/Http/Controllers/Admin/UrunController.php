@@ -15,12 +15,18 @@ class UrunController extends Controller
         return view ('hesap.admin.urun.urungoruntule',['products'=>$data]);
     }
 
-    function changeMemberStatus(Request $request){
+     public function changeSaleStatus(Request $request)
+    {
+        $members = ProductModel::find($request->id);
+        $members->isSale = $request->isSale;
+        $members->save();
+    }
 
-        $products = ProductModel::find($request->id);
-        $products->is_active = $request -> status;
-        $products -> save();
-
+     public function changeStokStatus(Request $request)
+    {
+        $members = ProductModel::find($request->id);
+        $members->haveStock = $request->haveStock;
+        $members->save();
     }
 
     function index(Request $request){
