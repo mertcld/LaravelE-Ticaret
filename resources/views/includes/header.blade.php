@@ -77,7 +77,7 @@
                         <button class="header-widget header-cart" title="Cartlist">
                             <i class="fas fa-shopping-basket"></i>
                             <sup>2</sup>
-                            <span>Toplam Fiyat<small>65.00 ₺</small></span>
+                            <span>Toplam Fiyat<small>59.00 ₺</small></span>
                         </button>
                     </div>
                 </div>
@@ -97,15 +97,9 @@
                     <div class="col-lg-12">
                         <div class="navbar-content">
                             <ul class="navbar-list">
-                                <li class="navbar-item dropdown">
-                                    <a class="navbar-link dropdown-arrow" href="#">Ana Sayfa</a>
-                                    <ul class="dropdown-position-list">
-                                        <li><a href="home-grid.html">Home grid</a></li>
-                                        <li><a href="index.html">Home index</a></li>
-                                        <li><a href="home-classic.html">Home classic</a></li>
-                                        <li><a href="home-standard.html">Home standard<span class="menu-badge">new</span></a></li>
-                                        <li><a href="home-category.html">Home category</a></li>
-                                    </ul>
+                                <li class="navbar-item">
+                                    <a class="navbar-link " href="/">Ana Sayfa</a>
+                                    
                                 </li>
                                  @foreach($categories as $categorie)
                                 <li class="navbar-item ">
@@ -322,40 +316,40 @@
             <div class="cart-header">
                 <div class="cart-total">
                     <i class="fas fa-shopping-basket"></i>
-                    <span>Toplam Ürün (5)</span>
+                    <span>Toplam Ürün (2)</span>
                 </div>
                 <button class="cart-close"><i class="icofont-close"></i></button>
             </div>
             <ul class="cart-list">
                 <li class="cart-item">
                     <div class="cart-media">
-                        <a href="#"><img src="/images/product/01.jpg" alt="product"></a>
+                        <a href="#"><img src="https://i2.milimaj.com/i/milliyet/75/0x0/5fac766a5542841b6073033f.jpg" alt="product"></a>
                         <button class="cart-delete"><i class="far fa-trash-alt"></i></button>
                     </div>
                     <div class="cart-info-group">
                         <div class="cart-info">
-                            <h6><a href="product-single.html">existing product name</a></h6>
-                            <p>Unit Price - $8.75</p>
+                            <h6><a href="product-single.html">Avakado</a></h6>
+                            <p>Fiyat - 11 ₺</p>
                         </div>
                         <div class="cart-action-group">
                             <div class="product-action">
                                 <button class="action-minus" title="Quantity Minus"><i class="icofont-minus"></i></button>
-                                <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1">
+                                <input class="action-input" title="Quantity Number" type="text" name="quantity" value="4">
                                 <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
                             </div>
-                            <h6>$56.98</h6>
+                            <h6>44 ₺</h6>
                         </div>
                     </div>
                 </li> 
                 <li class="cart-item">
                     <div class="cart-media">
-                        <a href="#"><img src="/images/product/02.jpg" alt="product"></a>
+                        <a href="#"><img src="https://www.guven.com.tr/storage/app/media/portakalsuyu.jpg" alt="product"></a>
                         <button class="cart-delete"><i class="far fa-trash-alt"></i></button>
                     </div>
                     <div class="cart-info-group">
                         <div class="cart-info">
-                            <h6><a href="product-single.html">existing product name</a></h6>
-                            <p>Unit Price - $8.75</p>
+                            <h6><a href="#">Portakal Suyu</a></h6>
+                            <p>Fiyat 15 ₺</p>
                         </div>
                         <div class="cart-action-group">
                             <div class="product-action">
@@ -363,7 +357,7 @@
                                 <input class="action-input" title="Quantity Number" type="text" name="quantity" value="1">
                                 <button class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
                             </div>
-                            <h6>$56.98</h6>
+                            <h6>15 ₺</h6>
                         </div>
                     </div>
                 </li>
@@ -379,7 +373,7 @@
                 </form>
                 <a class="cart-checkout-btn" href="{{route('sepet')}}">
                     <span class="checkout-label">Toplam Tutar</span>
-                    <span class="checkout-price">369.78 ₺</span>
+                    <span class="checkout-price">59 ₺</span>
                 </a>
             </div>
         </aside>
@@ -398,9 +392,9 @@
             </div>
             <div class="nav-content">
                 <div class="nav-btn">
-                    <a href="login.html" class="btn btn-inline">
+                    <a href="#" class="btn btn-inline">
                         <i class="fa fa-unlock-alt"></i>
-                        <span>join here</span>
+                        <span>Kayıt Ol</span>
                     </a>
                 </div>
                 <!-- This commentable code show when user login or register -->
@@ -409,19 +403,7 @@
                     <h4 class="nav-name"><a href="profile.html">Miron Mahmud</a></h4>
                 </div> -->
                
-                <ul class="nav-list">
-                    <li>
-                        <a class="nav-link dropdown-link" href="#"><i class="icofont-home"></i>Home</a>
-                        <ul class="dropdown-list">
-                            <li><a href="home-grid.html">Home grid</a></li>
-                            <li><a href="{{url('/')}}">Home index</a></li>
-                            <li><a href="home-classic.html">Home classic</a></li>
-                            <li><a href="home-standard.html">Home standard<span class="menu-badge">new</span></a></li>
-                            <li><a href="home-category.html">Home category</a></li>
-                        </ul>
-                    </li>
-                 
-                </ul>
+              
                 <div class="nav-info-group">
                     <div class="nav-info">
                         <i class="icofont-ui-touch-phone"></i>
@@ -439,7 +421,7 @@
                     </div>
                 </div>
                 <div class="nav-footer">
-                    <p>All Rights Reserved by <a href="#">megi</a></p>
+                    <p>All Rights Reserved by <a href="#">MEGİ</a></p>
                 </div>
             </div>
         </aside>

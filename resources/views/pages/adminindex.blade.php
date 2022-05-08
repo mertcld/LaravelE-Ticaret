@@ -18,7 +18,7 @@
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 
 
-<html lang="en" dir="ltr">
+<html lang="tr" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
@@ -476,7 +476,7 @@ nav .profile-details i{
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Toplam Kategori</div>
-            <div class="number">40,876</div>
+            <div class="number">{{$data}}</div>
             <!-- <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -487,7 +487,7 @@ nav .profile-details i{
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Toplam Ürün</div>
-            <div class="number">38,876</div>
+            <div class="number">{{$data2}}</div>
             <!-- <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -498,7 +498,7 @@ nav .profile-details i{
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Toplam Sipariş</div>
-            <div class="number">12,876</div>
+            <div class="number">{{$data3}}</div>
             <!-- <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
@@ -509,7 +509,7 @@ nav .profile-details i{
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Kullanıcılar</div>
-            <div class="number">200</div>
+            <div class="number">{{$data4}}</div>
             <!-- <div class="indicator">
               <i class='bx bx-down-arrow-alt down'></i>
               <span class="text">Down From Today</span>
@@ -521,10 +521,10 @@ nav .profile-details i{
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recent Sales</div>
+          <div class="title">Son Siparişler</div>
           <div class="sales-details">
             <ul class="details">
-              <li class="topic">Date</li>
+              <li class="topic">Tarih</li>
               
             </ul>
             <ul class="details">
@@ -542,63 +542,51 @@ nav .profile-details i{
           </div>
         </div>
         <div class="top-sales box">
-          <div class="title">Top Seling Product</div>
+          <div class="title">En Çok Satılan Ürünler</div>
           <ul class="top-sales-details">
             <li>
             <a href="#">
               <!--<img src="images/sunglasses.jpg" alt="">-->
-              <span class="product">Vuitton Sunglasses</span>
+              <span class="product">Domates</span>
             </a>
-            <span class="price">$1107</span>
+            <span class="price">1000 ₺</span>
           </li>
           <li>
             <a href="#">
                <!--<img src="images/jeans.jpg" alt="">-->
-              <span class="product">Hourglass Jeans </span>
+              <span class="product">Karpuz </span>
             </a>
-            <span class="price">$1567</span>
+            <span class="price">650 ₺</span>
           </li>
           <li>
             <a href="#">
              <!-- <img src="images/nike.jpg" alt="">-->
-              <span class="product">Nike Sport Shoe</span>
+              <span class="product">Patlıcan</span>
             </a>
-            <span class="price">$1234</span>
+            <span class="price">535 ₺</span>
           </li>
           <li>
             <a href="#">
               <!--<img src="images/scarves.jpg" alt="">-->
-              <span class="product">Hermes Silk Scarves.</span>
+              <span class="product">Biber</span>
             </a>
-            <span class="price">$2312</span>
+            <span class="price">500 ₺</span>
           </li>
           <li>
             <a href="#">
               <!--<img src="images/blueBag.jpg" alt="">-->
-              <span class="product">Succi Ladies Bag</span>
+              <span class="product">Salatalık</span>
             </a>
-            <span class="price">$1456</span>
+            <span class="price">430 ₺</span>
           </li>
           <li>
             <a href="#">
               <!--<img src="images/bag.jpg" alt="">-->
-              <span class="product">Gucci Womens's Bags</span>
+              <span class="product">Avakado</span>
             </a>
-            <span class="price">$2345</span>
-          <li>
-            <a href="#">
-              <!--<img src="images/addidas.jpg" alt="">-->
-              <span class="product">Addidas Running Shoe</span>
-            </a>
-            <span class="price">$2345</span>
-          </li>
-<li>
-            <a href="#">
-             <!--<img src="images/shirt.jpg" alt="">-->
-              <span class="product">Bilack Wear's Shirt</span>
-            </a>
-            <span class="price">$1245</span>
-          </li>
+            <span class="price">400 ₺</span>
+          
+ 
           </ul>
         </div>
       </div>

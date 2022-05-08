@@ -39,10 +39,10 @@
     <tr>
         <td>{{$product['id']}}</td>
         <td>{{$product['name']}}</td>
-        <td>{{$product['price']}}</td>
+        <td>{{$product['price']}} ₺</td>
         <td>{{$product['quantity']}}</td>
         <td>{{$product['description']}}</td>
-        <td>{{$product['picture']}}</td>
+        <td> <img width="60" height="60" src="{{$product['picture']}}" alt="resim"> </td>
          <td>
             <input data-id="{{$product->id}}" class="toggle-class" type="checkbox" data-onstyle="success"
                             data-offstyle="danger" data-toggle="toggle" data-on="Stokta" data-off="Stokta Değil"
@@ -59,13 +59,13 @@
 
         </td>
          <td>
-            <div>
-                <a href="{{url('urunguncelle/'. $product ->id)}}" class="btn btn-primary mr-2 " >Güncelle</a>
+            <div style="margin-bottom:5px;">
+                <a href="{{url('urunguncelle/'. $product ->id)}}" class="btn btn-primary mr-2 " ><i class="fas fa-edit"></i></a>
             </div>            
             <form action = "{{url('/delete/'.$product->id)}}" method = "post">
             {{ csrf_field() }}
             {{ method_field('DELETE') }} 
-                <button class = "btn btn-danger" type = "submit">Sil</button>
+                <button class = "btn btn-danger  " type = "submit"><i class="fas fa-times "></i></button>
             </form>
         </td>
        

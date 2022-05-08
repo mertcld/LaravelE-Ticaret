@@ -2,6 +2,7 @@
 
 <?php
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\SiparisController;
 use App\Http\Controllers\Admin\UrunController;
 use App\Http\Controllers\Admin\UserController;
@@ -85,9 +86,8 @@ Route::post('hesabim',[HesabimController::class,'update'])->name('kullanici.prof
 
 //admin sayfaları
 
-Route::get('/adminindex', function () {
-    return view('pages.adminindex');
-})->name('adminindex');
+Route::get('/adminindex', [AdminController::class,'get'])->name('adminindex');
+ 
 Route::get('/admin/sifresifirla', function () {
     return view('hesap.admin.sifresifirla');
 })->name('adminSifreSifirla');

@@ -230,7 +230,7 @@
                                             <i class="fas fa-heart"></i>
                                         </button>
                                         <a class="product-image" href="product-video.html">
-                                            <img src="/images/product/01.jpg" alt="product">
+                                            <img src="{{$product['picture']}}" alt="product">
                                         </a>
                                         <div class="product-widget">
                                             <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
