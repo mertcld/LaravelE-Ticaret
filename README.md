@@ -1,14 +1,17 @@
-<p align="center"><a href="https://megieticaret.kodblog.online" target="_blank"><img src="http://megieticaret.kodblog.online/images/logo.png" width="400"></a></p>
+<p align="center"><a href="http://megieticaret.kodblog.online" target="_blank"><img src="http://megieticaret.kodblog.online/images/logo.png" width="400"></a></p>
 
 <p align="center">
-<a href="https://megieticaret.kodblog.online">Web</a>
+<a href="http://megieticaret.kodblog.online">Web</a>
 
 </p>
 
-## About Laravel
+## Proje Hakkında
+Proje Laravel Frameworkü ile yazılmış olup kullanıcı ve admin girişleri aktiftir. Kullanıcı kayıt olma veya giriş için <a href="http://megieticaret.kodblog.online/girisyap">buraya</a> tıklayabilirsiniz. Admin girişi için ise <a href="http://megieticaret.kodblog.online/admin/girisyap">buraya</a> tıklayabilirsiniz.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Kullanıcı bilgileri : 
+Admin Bilgileri : 
 
+/*
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
@@ -60,3 +63,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+*/
