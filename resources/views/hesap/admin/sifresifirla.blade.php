@@ -39,10 +39,10 @@
                         </div>
                         <div class="user-form-card">
                             <div class="user-form-title">
-                                <h2> Şifre Sıfırlama</h2>
+                                <h2> Admin Şifre Sıfırlama</h2>
                                 <p>Admin şifre sıfırlama çok basit!</p>
                             </div>
-                            <form action="{{url('/sifresifirla-post')}}" method="post">
+                            <form action="{{url('/sifresifirla-postAdmin')}}" method="post">
                             @csrf
                             <form class="user-form">
                                 <div class="form-group">

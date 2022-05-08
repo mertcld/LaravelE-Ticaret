@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="form-button">
                                     <button type="submit">Giriş Yap</button>
-                                    <p>Şifreni mi unuttun?<a href="{{route('adminSifreSifirla')}}">Şifreni Sıfırla</a></p>
+                                    <p>Şifreni mi unuttun?<a href="{{route('sifresifirlaAdmin')}}">Şifreni Sıfırla</a></p>
                                 </div>
                             </form>
                         </div>

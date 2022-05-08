@@ -30,7 +30,7 @@ class PasswordMail extends Mailable
     {
       return $this->view('hesap.kullanici.mail.password_mail')
                   ->subject('Şifreniz')
-                  ->from('megi@gmail.com', 'MEGİ')
+                  ->from('kouyazlab3@gmail.com', 'MEGİ')
                   ->with('rand', $this->rand);
     }
 }

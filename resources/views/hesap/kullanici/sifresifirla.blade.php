@@ -14,7 +14,7 @@
         <meta name="template" content="Organe"> 
         <meta name="title" content="Kullanıcı Şifre Sıfırlama">
       
-        <title>Admin Şifre Sıfırlama</title>
+        <title>Şifre Sıfırlama</title>
 
    
         
@@ -39,10 +39,10 @@
                         </div>
                         <div class="user-form-card">
                             <div class="user-form-title">
-                                <h2> Şifre Sıfırlama</h2>
+                                <h2>Kullanıcı Şifre Sıfırlama</h2>
                                 <p>Şifre sıfırlama çok basit!</p>
                             </div>
-                              <form action="{{url('/sifresifirla-post')}}" method="post">
+                              <form action="{{url('/sifresifirla-postKullanıcı')}}" method="post">
                             @csrf
                             
                                @if(session('error'))

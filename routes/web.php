@@ -64,7 +64,7 @@ Route::get('/kayitol', function () {
 Route::post('hesap/girisyap',[HesapIslemleri::class,'loginpost'])->name('loginpost');
 Route::get('/sifresifirla', function () {
     return view('hesap.kullanici.sifresifirla');
-})->name('sifreSifirla');
+})->name('sifresifirlaKullanici');
 Route::post('hesap/kayitol',[HesapIslemleri::class,'registerpost'])->name('registerpost');
 // Giriş ve Kayıt olma GET POST 
 //Çıkış yapma
@@ -88,23 +88,23 @@ Route::post('hesabim',[HesabimController::class,'update'])->name('kullanici.prof
 
 Route::get('/adminindex', [AdminController::class,'get'])->name('adminindex');
  
-Route::get('/admin/sifresifirla', function () {
-    return view('hesap.admin.sifresifirla');
-})->name('adminSifreSifirla');
+// Route::get('/admin/sifresifirla', function () {
+//     return view('hesap.admin.sifresifirla');
+// })->name('adminSifreSifirla');
 
 
 
 // kullanici sifre sifirlama 
-Route::get('/sifresifirla', function () {
+Route::get('/sifresifirlaa', function () {
     return view('hesap.kullanici.sifresifirla');
-});
-Route::post('/sifresifirla-post', [PasswordResetController::class, 'kullanici_new_password']);
+})->name('sifresifirlaKullanicix');
+Route::post('/sifresifirla-postKullanıcı', [PasswordResetController::class, 'kullanici_new_password'])->name('sifresifirla-postKullanici');
 
 // admin sifre sifirlama
 Route::get('/sifresifirla', function () {
     return view('hesap.admin.sifresifirla');
-});
-Route::post('/sifresifirla-post', [PasswordResetController::class, 'admin_new_password']);
+})->name('sifresifirlaAdmin');
+Route::post('/sifresifirla-postAdmin', [PasswordResetController::class, 'admin_new_password'])->name('sifresifirla-postAdmin');
 
 //veritabani işlemleri için crud
 // Route::get('/kayitol',[VeritabaniIslemleri::class,'kayitol']);
