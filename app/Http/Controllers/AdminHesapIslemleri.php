@@ -56,7 +56,7 @@ class AdminHesapIslemleri extends Controller
 
 
 
-           return redirect()->route('index',$dizi);
+           return redirect()->route('adminindex',$dizi);
        }  else {
             return redirect() ->back()->with('message', 'Şifre Yanlış!');
         }
