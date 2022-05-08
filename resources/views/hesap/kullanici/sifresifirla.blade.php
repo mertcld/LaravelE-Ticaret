@@ -42,7 +42,7 @@
                                 <h2>Kullanıcı Şifre Sıfırlama</h2>
                                 <p>Şifre sıfırlama çok basit!</p>
                             </div>
-                              <form action="{{url('/sifresifirla-postKullanıcı')}}" method="post">
+                              <form action="{{url('/sifresifirla-postKullanici')}}" method="post">
                             @csrf
                             
                                @if(session('error'))

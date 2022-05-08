@@ -98,7 +98,7 @@ Route::get('/adminindex', [AdminController::class,'get'])->name('adminindex');
 Route::get('/sifresifirlaa', function () {
     return view('hesap.kullanici.sifresifirla');
 })->name('sifresifirlaKullanicix');
-Route::post('/sifresifirla-postKullanıcı', [PasswordResetController::class, 'kullanici_new_password'])->name('sifresifirla-postKullanici');
+Route::post('/sifresifirla-postKullanici', [PasswordResetController::class, 'kullanici_new_password'])->name('sifresifirla-postKullanici');
 
 // admin sifre sifirlama
 Route::get('/sifresifirla', function () {
