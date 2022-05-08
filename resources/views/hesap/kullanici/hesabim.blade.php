@@ -36,20 +36,26 @@
                                 <div class="row">
                                     <div class="col-lg-2">
                                         <div class="profile-image">
-                                            <a href="#"><img src="images/user.png" alt="user"></a>
+                                            <a href="#"><img src="{{ $picture }}" alt="user"></a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-4">
+                                    <div class="col-md-3  ">
                                         <div class="form-group">
-                                            <  <label class="form-label">Ad Soyad</label>
+                                             <label class="form-label">Ad Soyad</label>
                                             <!-- Miron Mahmud vardı value kısmında -->
                                             <input class="form-control" type="text" value={{ $Adsoyad }} name="name">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-4">
+                                    <div class="col-md-3  ">
                                         <div class="form-group">
                                             <label class="form-label">Email</label>
                                             <input class="form-control" type="email" value={{ $Email }} name="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2  ">
+                                        <div class="form-group">
+                                            <label class="form-label">Foto</label>
+                                            <input class="form-control" type="text" value={{ $picture }} name="picture">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">

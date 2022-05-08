@@ -74,8 +74,8 @@
                     <label for ="">Stok Durumu </label>
                     <!-- <input type = "text" class = "form-control" name = "haveStock" placeholder="Ürün Stok Durumu Giriniz" value = "{{ old('haveStock')}}" > -->
                     <select id="haveStock" name = "haveStock">
-                        <option value="Seçim Yap">Seçiniz</option>
-                        <option value="1">Stokta</option>
+                        <option value="Seçim Yap" disabled>Seçiniz</option>
+                        <option value="1" selected>Stokta</option>
                         <option value="0">Stokta Değil</option>
                     </select>
                     
@@ -88,8 +88,8 @@
                     <!-- <input type = "text" class = "form-control" name = "isSale" placeholder="Ürün Satış Durumu Giriniz" value = "{{ old('isSale')}}" > -->
                     <!-- <input type = "checkbox" value="true" name = "isSale" placeholder="Ürün Satış Durumu Giriniz"  > -->
                    <select id="isSale" name = "isSale">
-                        <option value="Seçim Yap">Seçiniz</option>
-                        <option value="1">Satışta</option>
+                        <option value="Seçim Yap" disabled>Seçiniz</option>
+                        <option value="1" selected>Satışta</option>
                         <option value="0 ">Satışta Değil</option>
                     </select>
                     <span style = "color: red">@error('isSale'){{$message}} @enderror</span>

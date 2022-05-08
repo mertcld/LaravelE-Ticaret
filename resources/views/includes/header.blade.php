@@ -52,7 +52,7 @@
                     </a>
                     @else
                     <a href="{{route('hesabim')}}" class="header-widget" title="My Account">
-                        <img src="/images/user.png" alt="user">
+                        <img src="{{Session::Get('picture')}}" alt="user">
                         <span>{{Session::Get('userName','Hesabım')}}</span>
                        
                     </a>

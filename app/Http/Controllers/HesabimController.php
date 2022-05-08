@@ -21,6 +21,7 @@ class HesabimController extends Controller
             "id"=>$kullanici->id,
             "Adsoyad"=>$kullanici->name,
             "Email"=>$kullanici->email,
+            "picture"=>$kullanici->picture,
             "categories"=>$category,
           
         ];
@@ -37,6 +38,7 @@ class HesabimController extends Controller
             DB::table('kullanicilar')->where('id', $user->id)->update([
                 "name" => $request->name,
                 "email" => $request->email,
+                "picture"=>$request->picture,
 
             ]);
 

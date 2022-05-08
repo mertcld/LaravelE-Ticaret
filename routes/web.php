@@ -176,3 +176,5 @@ Route::get('users', [UserController::class,'index']);
 
 Route::get('/sepet', [SepetController::class,'sepetGet'])->name('sepet');
 Route::get('/invoice', [SepetController::class,'invoiceGet'])->name('invoice');
+
+Route::post('/sepet',[SepetController::class, 'siparistamamla'])->name('siparistamamla'); 

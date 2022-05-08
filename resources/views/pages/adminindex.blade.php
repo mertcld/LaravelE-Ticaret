@@ -524,22 +524,14 @@ nav .profile-details i{
           <div class="title">Son Siparişler</div>
           <div class="sales-details">
             <ul class="details">
-              <li class="topic">Tarih</li>
-              
-            </ul>
-            <ul class="details">
+              @foreach($orders as $order)
+              <li class="topic">{{$order['id']}} Nolu Sipariş => {{$order['totalAmount']}} ₺  ({{$order['created_at']}}) </li>
           
-          </ul>
-          <ul class="details">
-           
-          </ul>
-          <ul class="details">
-           
-          </ul>
+        @endforeach
+            </ul>
+            
           </div>
-          <div class="button">
-       
-          </div>
+         
         </div>
         <div class="top-sales box">
           <div class="title">En Çok Satılan Ürünler</div>

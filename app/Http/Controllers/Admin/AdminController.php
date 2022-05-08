@@ -17,12 +17,13 @@ class AdminController extends Controller
         $data2 = ProductModel::all()->count();
         $data3 = OrdersModel::all()->count();
         $data4 = KullanicilarModel::all()->count();
+        $orders = OrdersModel::all();
         $dizi = [
             "data"=>$data,
             "data2"=>$data2,
             "data3"=>$data3,
             "data4"=>$data4,
-             
+             "orders"=>$orders,
           
         ];
         

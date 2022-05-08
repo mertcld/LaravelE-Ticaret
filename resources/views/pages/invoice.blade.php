@@ -161,8 +161,8 @@
                                 <div class="invoice-recieved">
                                     <h6>Sipariş Numarası <span>1665</span></h6>
                                     <h6>Sipariş Tarihi <span>23:21 10-04-2022</span></h6>
-                                    <h6>Toplam tutar <span>65 ₺</span></h6>
-                                    <h6>Ödeme Tipi <span>Kredi Kartı</span></h6>
+                                    <h6>Toplam tutar <span>59 ₺</span></h6>
+                                    <h6>Ödeme Tipi <span>Kapıda Ödeme</span></h6>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                                 <ul class="invoice-details">
                                     <li>
                                         <h6>Ara Toplam</h6>
-                                        <p>65 ₺</p>
+                                        <p>59 ₺</p>
                                     </li>
                                     <li>
                                         <h6>İndirim</h6>
@@ -211,11 +211,11 @@
                                     </li>
                                     <li>
                                         <h6>Ödeme Tipi</h6>
-                                        <p>Kredi Kartı</p>
+                                        <p>Kapıda Ödeme</p>
                                     </li>
                                     <li>
                                         <h6>Toplam</h6>
-                                        <p>65 ₺</p>
+                                        <p>59 ₺</p>
                                     </li>
                                 </ul>
                             </div>
@@ -237,17 +237,17 @@
                                 <tbody>
                                     <tr>
                                         <td class="table-serial"><h6>01</h6></td>
-                                        <td class="table-image"><img src="images/product/01.jpg" alt="product"></td>
-                                        <td class="table-name"><h6>Ürün adı</h6></td>
-                                        <td class="table-price"><h6>55 ₺ </h6></td>
+                                        <td class="table-image"><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="product"></td>
+                                        <td class="table-name"><h6>Avakado</h6></td>
+                                        <td class="table-price"><h6>44 ₺ </h6></td>
                                        
-                                        <td class="table-quantity"><h6>1</h6></td>
+                                        <td class="table-quantity"><h6>4</h6></td>
                                     </tr>
                                     <tr>
                                         <td class="table-serial"><h6>02</h6></td>
-                                        <td class="table-image"><img src="images/product/01.jpg" alt="product"></td>
-                                        <td class="table-name"><h6>Ürün adı</h6></td>
-                                        <td class="table-price"><h6>10 ₺ </h6></td>
+                                        <td class="table-image"><img src="	https://www.guven.com.tr/storage/app/media/portakalsuyu.jpg" alt="product"></td>
+                                        <td class="table-name"><h6>Portakal Suyu</h6></td>
+                                        <td class="table-price"><h6>15 ₺ </h6></td>
                                        
                                         <td class="table-quantity"><h6>1</h6></td>
                                     </tr>

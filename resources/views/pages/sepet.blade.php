@@ -175,11 +175,11 @@
                                         <tbody>
                                             <tr>
                                                 <td class="table-serial"><h6>01</h6></td>
-                                                <td class="table-image"><img src="images/product/01.jpg" alt="product"></td>
-                                                <td class="table-name"><h6>ürün adı</h6></td>
-                                                <td class="table-price"><h6> 19 ₺<small>/kilo</small></h6></td>
+                                                <td class="table-image"><img src="https://i2.milimaj.com/i/milliyet/75/0x0/5fac766a5542841b6073033f.jpg" alt="product"></td>
+                                                <td class="table-name"><h6>Avakado</h6></td>
+                                                <td class="table-price"><h6> 44 ₺ </h6></td>
                                                
-                                                <td class="table-quantity"><h6>3</h6></td>
+                                                <td class="table-quantity"><h6>4</h6></td>
                                                 <td class="table-action">
                                                     <a class="view" href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#product-view"><i class="fas fa-eye"></i></a>
                                                     <a class="trash" href="#" title="Remove Wishlist"><i class="icofont-trash"></i></a>
@@ -188,11 +188,11 @@
                                            
                                             <tr>
                                                 <td class="table-serial"><h6>02</h6></td>
-                                                <td class="table-image"><img src="images/product/01.jpg" alt="product"></td>
-                                                <td class="table-name"><h6>ürün adı</h6></td>
-                                                <td class="table-price"><h6> 29 ₺<small>/kilo</small></h6></td>
+                                                <td class="table-image"><img src="	https://www.guven.com.tr/storage/app/media/portakalsuyu.jpg" alt="product"></td>
+                                                <td class="table-name"><h6>Portakal Suyu</h6></td>
+                                                <td class="table-price"><h6> 15 ₺<small>/litre</small></h6></td>
                                                
-                                                <td class="table-quantity"><h6>5</h6></td>
+                                                <td class="table-quantity"><h6>1</h6></td>
                                                 <td class="table-action">
                                                     <a class="view" href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#product-view"><i class="fas fa-eye"></i></a>
                                                     <a class="trash" href="#" title="Remove Wishlist"><i class="icofont-trash"></i></a>
@@ -214,11 +214,11 @@
                                     <ul>
                                         <li>
                                             <span>Ara Toplam</span>
-                                            <span>55 ₺</span>
+                                            <span>59 ₺</span>
                                         </li>
                                         <li>
                                             <span>Teslimat Ücreti</span>
-                                            <span> 10 ₺</span>
+                                            <span> 0 ₺</span>
                                         </li>
                                         <li>
                                             <span>İnidirim</span>
@@ -226,7 +226,7 @@
                                         </li>
                                         <li>
                                             <span>Toplam </span>
-                                            <span>65 ₺</span>
+                                            <span>59 ₺</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -316,7 +316,11 @@
                             <label for="checkout-check"> <a href="#">Kullanıcı sözleşmesini</a> kabul ediyorum.</label>
                         </div>
                         <div class="checkout-proced">
-                            <a href="{{route('invoice')}}" class="btn btn-inline">Siparişi Tamamla</a>
+                                     
+            <form action = {{route('siparistamamla')}} method = "post" enctype="multipart/form-data">
+                @csrf
+                            <button type="submit"   class="btn btn-inline">Siparişi Tamamla</button>
+</form>
                         </div>
                         </div>
                     </div>

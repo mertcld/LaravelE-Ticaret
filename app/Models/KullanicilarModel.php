@@ -15,6 +15,7 @@ class KullanicilarModel extends Authenticatable
         'email',
         'password',
         'is_active',
+        "picture",
     ];
 
     protected $hidden = [

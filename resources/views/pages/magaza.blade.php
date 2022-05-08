@@ -28,7 +28,7 @@
 <!--=====================================
                     PRODUCT VIEW START
         =======================================-->
-        <div class="modal fade" id="product-view">
+        <!-- <div class="modal fade" id="product-view">
             <div class="modal-dialog"> 
                 <div class="modal-content">
                     <button class="modal-close icofont-close" data-bs-dismiss="modal"></button>
@@ -115,7 +115,7 @@
                                             <i class="icofont-heart"></i>
                                             <span>add to wish</span>
                                         </a>
-                                        <a class="view-compare" href="compare.html" title="Compare This Item">
+                                        <a class="view-compare" href="#" title="Compare This Item">
                                             <i class="fas fa-random"></i>
                                             <span>Compare This</span>
                                         </a>
@@ -126,7 +126,7 @@
                     </div>
                 </div> 
             </div> 
-        </div>
+        </div> -->
         <!--=====================================
                     PRODUCT VIEW END
         =======================================-->
@@ -233,9 +233,9 @@
                                             <img src="{{$product['picture']}}" alt="product">
                                         </a>
                                         <div class="product-widget">
-                                            <a title="Product Compare" href="compare.html" class="fas fa-random"></a>
-                                            <a title="Product Video" href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true" data-vbtype="video"></a>
-                                            <a title="Product View" href="#" class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#product-view"></a>
+                                            <a title="Karşılaştır" href="#" class="fas fa-random"></a>
+                                            
+                                            <a title="{{$product['description']}}" href="#" class="fas fa-eye" data-bs-toggle="modal" data-bs-target="#product-view"></a>
                                         </div>
                                     </div>
                                     <div class="product-content">
@@ -254,6 +254,7 @@
                                              
                                             <span>{{$product['price']}}₺<small></small></span>
                                         </h6>
+                                    
                                         <button class="product-add" title="Add to Cart">
                                             <i class="fas fa-shopping-basket"></i>
                                             <span>Sepete Ekle</span>

@@ -57,6 +57,7 @@ class HesapIslemleri extends Controller
         $dizi = [
            
             "user_name"=>$user->name,
+            "picture"=>$user->picture
             
         ];
         //Check password the user
@@ -65,6 +66,7 @@ class HesapIslemleri extends Controller
             //Put a create user from session   
             $request->session()->put('user',$user);
             Session::put('username', $user->name);
+            Session::put('picture', $user->picture);
 
 
 
